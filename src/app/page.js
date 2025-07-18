@@ -1,4 +1,6 @@
 import RecentListings from "@/components/section/recentlisting";
+import ServiceComponent from "@/components/section/services";
+import Works from "@/components/section/works";
 import Image from "next/image";
 
 export default function Home() {
@@ -60,6 +62,12 @@ export default function Home() {
 
         <div>
           <RecentListings/>
+          </div>
+          <div>
+            <ServiceComponent></ServiceComponent>
+          </div>
+          <div>
+            <Works/>
           </div>
 
 
