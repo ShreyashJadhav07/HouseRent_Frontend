@@ -1,7 +1,9 @@
 import RecentListings from "@/components/section/recentlisting";
 import ServiceComponent from "@/components/section/services";
 import Works from "@/components/section/works";
+
 import Image from "next/image";
+import LocationSearch from "@/components/section/locationsearch";
 
 export default function Home() {
 
@@ -68,7 +70,15 @@ export default function Home() {
           </div>
           <div>
             <Works/>
+            
+            
           </div>
+          <div>
+            <LocationSearch/>
+            
+          </div>
+       
+
 
 
    
