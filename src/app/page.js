@@ -1,3 +1,4 @@
+import RecentListings from "@/components/section/recentlisting";
 import Image from "next/image";
 
 export default function Home() {
@@ -56,6 +57,11 @@ export default function Home() {
                </div>
         ))}
         </div>
+
+        <div>
+          <RecentListings/>
+          </div>
+
 
    
 
