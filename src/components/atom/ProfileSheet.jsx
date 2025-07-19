@@ -8,19 +8,9 @@ import { navigationItems } from "../section/Header"; // make sure this contains 
 
 const ProfileSheet = () => {
   const [open, setOpen] = useState(false);
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [userName, setUserName] = useState("Guest");
 
-  const handleLoginLogout = () => {
-    if (isLoggedIn) {
-      setIsLoggedIn(false);
-      setUserName("Guest");
-    } else {
-      setIsLoggedIn(true);
-      setUserName("Shreyash"); // simulate login
-    }
-    setOpen(false);
-  };
+
+
 
   return (
     <Sheet open={open} onOpenChange={setOpen}>
@@ -35,23 +25,23 @@ const ProfileSheet = () => {
 
         {/* Profile Display */}
         <div className="p-6 flex flex-col items-center gap-2 mt-[100px] rounded-lg">
-          {!isLoggedIn ? (
+          
             <div className="h-[100px] w-[100px] rounded-full bg-gray-700 flex items-center justify-center text-4xl font-bold -mt-[60px]">
-              ?
+              
             </div>
-          ) : (
+          
             <div className="h-[100px] w-[100px] rounded-full bg-[#0059A3] text-4xl font-semibold flex items-center justify-center -mt-[60px]">
-              {userName.charAt(0).toUpperCase()}
+              
             </div>
-          )}
+          
 
-          <p className="text-xl font-bold capitalize">{userName}</p>
+          <p className="text-xl font-bold capitalize">Guest</p>
 
           <button
-            onClick={handleLoginLogout}
+        
             className="rounded-full font-medium mt-4 text-base px-4 py-2 bg-fuchsia-600"
           >
-            {isLoggedIn ? "Logout" : "Login"}
+            Login
           </button>
         </div>
 
