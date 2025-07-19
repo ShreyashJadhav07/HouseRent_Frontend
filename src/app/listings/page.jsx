@@ -33,7 +33,7 @@ const listing = [
    
     bedrooms: 2,
     image: "/img7.jpg",
-      href:"/propertylis/propert1"
+      href:"/propertylis/propertylis3"
   },
   {
     id: 4,
@@ -43,7 +43,7 @@ const listing = [
  
     bedrooms: 4,
     image: "/img5.jpg",
-      href:"/propertylis/propert1"
+      href:"/propertylis/propertylis4"
   },
   {
     id: 9,
@@ -53,7 +53,7 @@ const listing = [
     
     bedrooms: 3,
     image: "/img15.jpg",
-      href:"/propertylis/propert1"
+      href:"/propertylis/propertylis5"
   },
   {
     id: 10,
@@ -63,7 +63,7 @@ const listing = [
  
     bedrooms: 2,
     image: "/img16.jpg",
-      href:"/propertylis/propert1"
+      href:"/propertylis/propertylis6"
   },
   {
     id: 11,
