@@ -4,6 +4,7 @@ import Works from "@/components/section/works";
 
 import Image from "next/image";
 import LocationSearch from "@/components/section/locationsearch";
+import TestimonialsCarousel from "@/components/atom/CrouselEffect";
 
 export default function Home() {
 
@@ -81,6 +82,12 @@ export default function Home() {
             <LocationSearch/>
             
           </div>
+          <div>
+            <TestimonialsCarousel></TestimonialsCarousel>
+          </div>
+
+         
+
                  
 
 
