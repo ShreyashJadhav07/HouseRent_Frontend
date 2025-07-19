@@ -73,7 +73,7 @@ const listing = [
   
     bedrooms: 4,
     image: "/img17.jpg",
-      href:"/propertylis/propert1"
+      href:"/propertylis/propertylis7"
   },
   {
     id: 12,
@@ -83,7 +83,7 @@ const listing = [
 
     bedrooms: 2,
     image: "/img18.jpg",
-      href:"/propertylis/propert1"
+      href:"/propertylis/propertylis8"
   },
 ]
 

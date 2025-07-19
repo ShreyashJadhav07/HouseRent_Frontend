@@ -10,27 +10,29 @@ const listing = [
     title: "Luxury Retreat",
     location: "Pacific, San Francisco",
     price: 270000,
-    guests: 2,
     bedrooms: 1,
     image: "/img19.jpg",
+   href:"/propertylis/propertylis1"
   },
   {
     id: 6,
     title: "Modern Chic",
     location: "Murray Hill, New York",
     price: 21000,
-    guests: 2,
+
     bedrooms: 1,
     image:"/img20.jpg",
+    href:"/propertylis/propertylis2"
   },
   {
     id: 7,
     title: "Panoramic Views",
     location: "Biltmore, Phoenix",
     price: 110000,
-    guests: 4,
+
     bedrooms: 2,
     image: "/img21.jpg",
+    href:"/propertylis/propertylis3"
   },
   {
     id: 8,
@@ -40,6 +42,7 @@ const listing = [
 
     bedrooms: 2,
     image: "/img22.jpg",
+    href:"/propertylis/propertylis4"
   },
   {
     id: 9,
@@ -49,6 +52,7 @@ const listing = [
    
     bedrooms: 3,
     image: "/img23.jpg",
+    href:"/propertylis/propertylis5"
   },
   {
     id: 10,
@@ -58,6 +62,7 @@ const listing = [
    
     bedrooms: 2,
     image: "/img24.jpg",
+    href:"/propertylis/propertylis6"
   },
   {
     id: 11,
@@ -67,6 +72,7 @@ const listing = [
  
     bedrooms: 4,
     image: "/img25.jpg",
+    href:"/propertylis/propertylis7"
   },
   {
     id: 12,
@@ -75,6 +81,7 @@ const listing = [
     price: 18000,
     bedrooms: 2,
     image:  "/img26.jpg",
+    href:"/propertylis/propertylis8"
   },
 ]
 
@@ -100,8 +107,12 @@ export default function ListingsPage() {
         {/* Listings Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {listing.map((item) => (
+            <Link 
+            key={item.id}
+            href={item.href}
+            >
             <Card
-              key={item.id}
+              
               className="group cursor-pointer border-0 shadow-none bg-white/60 backdrop-blur-sm hover:bg-white/80 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 rounded-2xl overflow-hidden"
             >
               <CardContent className="p-0">
@@ -160,6 +171,7 @@ export default function ListingsPage() {
                 </div>
               </CardContent>
             </Card>
+            </Link>
           ))}
         </div>
       </section>

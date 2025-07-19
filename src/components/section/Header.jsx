@@ -11,9 +11,11 @@ const navigationItems = [
   { name: "HOME", href: "/" },
   { name: "LISTINGS", href: "/listings" },
   { name: "LOCATIONS", href: "/locations" },
+  { name: "WISHLIST", href: "/wishlist"},
+  { name: "PREMIUM", href: "/premium" },
   { name: "ABOUT US", href: "/about" },
-  { name: "BLOG", href: "/blog" },
-  { name: "LIST YOUR PLACE", href: "/list-place" },
+
+
   { name: "CONTACT US", href: "/contact" },
 ]
 
