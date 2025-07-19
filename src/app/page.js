@@ -10,14 +10,14 @@ export default function Home() {
   const stats=[
     {value:136,label:"Houses"},
     {value:79,label:"Apartments"},
-    {value:843,label:"satisfied Guest"},
+    {value:843,label:"satisfied Client"},
     {value:265,label:"Happy Owners"},
     
     
   ];
   return (
     <>
-    <div className="relative h-screen w-full text-white">
+    <div className="relative h-screen w-full text-white pt-16">
       {/* Background image */}
       <Image
         src="/img3.jpg" // replace with your own image path
@@ -43,9 +43,13 @@ export default function Home() {
           Discover the perfect home away from home in our diverse selection of
           rentals. Choose the accommodation that best suits your needs.
         </p>
-        <button className="bg-fuchsia-600 hover:bg-fuchsia-700 text-white px-6 py-3 rounded font-semibold">
-          Recent Listings
-        </button>
+       <a
+       href="#recent-listings"
+        className="bg-fuchsia-600 hover:bg-fuchsia-700 text-white px-6 py-3 rounded font-semibold inline-block"
+        >
+  Recent Listings
+</a>
+
       </div>
     </div>
 
@@ -62,7 +66,7 @@ export default function Home() {
         ))}
         </div>
 
-        <div>
+        <div id="recent-listings">
           <RecentListings/>
           </div>
           <div>

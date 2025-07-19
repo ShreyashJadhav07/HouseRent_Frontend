@@ -2,43 +2,48 @@ import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Users, Bed } from "lucide-react"
+import Link from "next/link"
 
 const listings = [
   {
     id: 1,
     title: "Luxury Retreat",
-    location: "Pacific, San Francisco",
+    location: "Pacific, Denver",
     price: 270000,
    
     bedrooms: 3,
     image: "/img4.jpg",
+     href:"/propertylis/propertylis1"
   },
   {
     id: 2,
     title: "Modern Chic",
-    location: "Murray Hill, New York",
+    location: "Murray Hill, Denver",
     price: 210000,
    
     bedrooms: 3,
     image: "/img6.jpg",
+    href:"/propertylis/propertylis2"
   },
   {
     id: 3,
     title: "Panoramic Views",
-    location: "Biltmore, Phoenix",
+    location: "Biltmore, Denver",
     price: 110000,
    
     bedrooms: 2,
     image: "/img7.jpg",
+    href:"/propertylis/propertylis3"
   },
   {
     id: 4,
     title: "Seaside Paradise",
-    location: "La Jolla, San Diego",
+    location: "La Jolla,Los Angeles",
     price: 1000000,
  
     bedrooms: 4,
     image: "/img5.jpg",
+    href:"/propertylis/propertylis4"
   },
 ]
 
@@ -54,16 +59,26 @@ export default function RecentListings() {
             and have a positive experience from start to finish.
           </p>
         </div>
-        <Button variant="ghost" className="text-gray-600 hover:text-gray-900 self-start md:self-auto">
+        <Link
+        href={"/listings"}
+        className="cursor-pointer hover:scale-105 transition-transform duration-300"
+        >
+
+        <p  className= "text-fuchsia-600 cursor-pointer ">
           {"< SEE ALL LISTINGS"}
-        </Button>
+        </p>
+        </Link>
       </div>
 
       {/* Listings Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
         {listings.map((listing) => (
+          <Link
+          key={listing.id}
+          href={listing.href}
+          >
           <Card
-            key={listing.id}
+           
             className="group cursor-pointer border-0 shadow-none hover:shadow-lg transition-shadow duration-300"
           >
             <CardContent className="p-0">
@@ -110,6 +125,7 @@ export default function RecentListings() {
               </div>
             </CardContent>
           </Card>
+          </Link>
         ))}
       </div>
     </section>

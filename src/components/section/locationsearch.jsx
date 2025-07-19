@@ -1,10 +1,11 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 const listing = [
-  { id: 1, title: "Mumbai", location: "Mumbai", image: "/img11.jpg" },
-  { id: 2, title: "Seattle", location: "Seattle", image: "/img13.jpg" },
-  { id: 3, title: "New York", location: "New York", image: "/img12.jpg" },
-  { id: 4, title: "Rajasthan", location: "Rajasthan", image: "/img14.jpg" },
+  { id: 1, title: "Denver", location: "Denver", image: "/img30.jpg",href:"/locations/Denver"},
+  { id: 2, title: "Seattle", location: "Seattle", image: "/img36.jpg",href:"/locations/Seattle"},
+  { id: 3, title: "New York", location: "New York", image: "/img32.jpg",href:"/locations/NewYork"},
+  { id: 4, title: "LosAngeles", location: "LosAngeles", image: "/img31.jpg", href:"locations/LosAngeles" },
 ];
 
 export default function LocationSearch() {
@@ -23,8 +24,14 @@ export default function LocationSearch() {
       {/* Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
         {listing.map((listing) => (
+          <Link
+          key={listing.id}
+          href={listing.href}
+          
+          >
+         
           <div
-            key={listing.id}
+           
             className="relative w-full h-64 rounded-2xl overflow-hidden shadow-lg group"
           >
             <Image
@@ -38,6 +45,7 @@ export default function LocationSearch() {
               <h3 className="text-lg font-semibold">{listing.title}</h3>
             </div>
           </div>
+           </Link>
         ))}
       </div>
     </section>

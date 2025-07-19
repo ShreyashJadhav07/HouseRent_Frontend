@@ -8,7 +8,7 @@ const listing = [
   {
     id: 1,
     title: "Luxury Retreat",
-    location: "Pacific, San Francisco",
+    location: "Pacific, Denver",
     price: 270000,
    
     bedrooms: 3,
@@ -18,7 +18,7 @@ const listing = [
   {
     id: 2,
     title: "Modern Chic",
-    location: "Murray Hill, New York",
+    location: "Murray Hill, Denver",
     price: 210000,
    
     bedrooms: 3,
@@ -28,7 +28,7 @@ const listing = [
   {
     id: 3,
     title: "Panoramic Views",
-    location: "Biltmore, Phoenix",
+    location: "Biltmore, Denver",
     price: 110000,
    
     bedrooms: 2,
@@ -38,7 +38,7 @@ const listing = [
   {
     id: 4,
     title: "Seaside Paradise",
-    location: "La Jolla, San Diego",
+    location: "La Jolla, San Los Angeles",
     price: 1000000,
  
     bedrooms: 4,
