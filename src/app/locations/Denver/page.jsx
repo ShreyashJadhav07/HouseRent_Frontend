@@ -8,86 +8,34 @@ const listing = [
   {
     id: 1,
     title: "Luxury Retreat",
-    location: "Pacific, San Francisco",
+    location: "Pacific, Denver",
     price: 270000,
    
     bedrooms: 3,
     image: "/img4.jpg",
-    href:"/propertylis/propertylis1"
   },
   {
     id: 2,
     title: "Modern Chic",
-    location: "Murray Hill, New York",
+    location: "Murray Hill, Denver",
     price: 210000,
    
     bedrooms: 3,
     image: "/img6.jpg",
-      href:"/propertylis/propertylis2"
   },
   {
     id: 3,
     title: "Panoramic Views",
-    location: "Biltmore, Phoenix",
+    location: "Biltmore, Denver",
     price: 110000,
    
     bedrooms: 2,
     image: "/img7.jpg",
-      href:"/propertylis/propert1"
   },
-  {
-    id: 4,
-    title: "Seaside Paradise",
-    location: "La Jolla, San Diego",
-    price: 1000000,
- 
-    bedrooms: 4,
-    image: "/img5.jpg",
-      href:"/propertylis/propert1"
-  },
-  {
-    id: 9,
-    title: "Mountain Escape",
-    location: "Aspen, Colorado",
-    price: 45000,
-    
-    bedrooms: 3,
-    image: "/img15.jpg",
-      href:"/propertylis/propert1"
-  },
-  {
-    id: 10,
-    title: "Urban Oasis",
-    location: "Downtown, Chicago",
-    price: 32000,
- 
-    bedrooms: 2,
-    image: "/img16.jpg",
-      href:"/propertylis/propert1"
-  },
-  {
-    id: 11,
-    title: "Beachfront Villa",
-    location: "Malibu, California",
-    price: 85000,
-  
-    bedrooms: 4,
-    image: "/img17.jpg",
-      href:"/propertylis/propert1"
-  },
-  {
-    id: 12,
-    title: "Historic Charm",
-    location: "Savannah, Georgia",
-    price: 18000,
 
-    bedrooms: 2,
-    image: "/img18.jpg",
-      href:"/propertylis/propert1"
-  },
 ]
 
-export default function ListingsPage() {
+export default function DenverPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
       <section className="w-full max-w-7xl mx-auto px-4 py-8 md:py-12 lg:py-16">
@@ -95,7 +43,7 @@ export default function ListingsPage() {
         <div className="mb-12">
           <div className="flex items-center justify-between">
             <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r bg-clip-text text-black">
-              All Listings
+              Denver
             </h1>
             <div className="flex gap-4">
               
@@ -109,26 +57,19 @@ export default function ListingsPage() {
         {/* Listings Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {listing.map((item) => (
-            <Link
-            key={item.id}
-            href={item.href}
-            >
             <Card
-              // key={item.id}
+              key={item.id}
               className="group cursor-pointer border-0 shadow-none bg-white/60 backdrop-blur-sm hover:bg-white/80 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 rounded-2xl overflow-hidden"
             >
               <CardContent className="p-0">
                 {/* Featured Badge */}
                 <div className="relative">
                   <div className="absolute top-4 left-4 z-10">
-                    <span className="px-3 py-1 bg-gradient-to-r from-purple-500 to-pink-500 text-white text-xs font-semibold rounded-full shadow-lg">
-                      ★ FEATURED
-                    </span>
+                   
                   </div>
                   
                   {/* Property Image */}
                   <div className="relative aspect-[4/3] overflow-hidden">
-              
                     <img
                       src={item.image}
                       alt={item.title}
@@ -174,18 +115,10 @@ export default function ListingsPage() {
                 </div>
               </CardContent>
             </Card>
-            </Link>
           ))}
         </div>
       </section>
-      <div className="flex justify-center mt-1 mb-5">
- <Link
-    href="/listings/listings2"
-    className="px-5 py-2 border border-gray-300 rounded-md bg-white text-black font-medium shadow-sm hover:bg-gray-100 transition"
-  >
-    Next
-  </Link>
-</div>
+      
       <HelpingComponent/>
     </div>
   )
