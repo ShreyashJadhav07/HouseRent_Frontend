@@ -15,70 +15,71 @@ const testimonials = [
     quote:
       "I had a wonderful experience renting a house through Rentalz. The process was simple and efficient. The house was beautiful and well-maintained.",
     name: "Jane B.",
-    image: "/placeholder.svg?height=80&width=80",
+    image: "/img47.jpg",
   },
   {
     id: 2,
     quote:
       "They were professional and helped me find the perfect home for me and my family. The house was in great condition and located in a convenient location.",
     name: "Isabella R.",
-    image: "/placeholder.svg?height=80&width=80",
+    image: "/img48.jpg",
   },
   {
     id: 3,
     quote:
       "The staff assisted me throughout the entire process of renting a house. The property that I rented was clean, modern, and conveniently located.",
     name: "David G.",
-    image: "/placeholder.svg?height=80&width=80",
+    image:"/img49.jpg",
   },
   {
     id: 4,
     quote:
       "Outstanding service from start to finish. The team was responsive, knowledgeable, and made the entire rental process stress-free. Highly recommend!",
     name: "Sarah M.",
-    image: "/placeholder.svg?height=80&width=80",
+    image: "/img50.jpg",
   },
   {
     id: 5,
     quote:
       "Found my dream apartment within days of contacting them. The virtual tours were excellent and saved me so much time. Great communication throughout.",
     name: "Michael T.",
-    image: "/placeholder.svg?height=80&width=80",
+    image: "/img66.jpg",
   },
   {
     id: 6,
     quote:
       "Exceptional customer service and attention to detail. They understood exactly what I was looking for and delivered beyond my expectations.",
     name: "Emily Chen",
-    image: "/placeholder.svg?height=80&width=80",
+    image: "/img47.jpg",
   },
   {
     id: 7,
     quote:
       "The rental process was seamless and transparent. No hidden fees, clear communication, and a beautiful property that exceeded all my expectations.",
     name: "Robert K.",
-    image: "/placeholder.svg?height=80&width=80",
+    image:"/img52.jpg",
   },
+  
   {
     id: 8,
     quote:
       "As a first-time renter, I was nervous about the process. The team guided me every step of the way and made it incredibly easy and comfortable.",
     name: "Lisa Park",
-    image: "/placeholder.svg?height=80&width=80",
+    image:"/img53.png",
   },
   {
     id: 9,
     quote:
       "Quick response times, professional service, and a fantastic selection of properties. They made relocating to a new city so much easier for my family.",
     name: "James Wilson",
-    image: "/placeholder.svg?height=80&width=80",
+    image:"/img54.png",
   },
   {
     id: 10,
     quote:
       "The quality of properties and level of service is unmatched. They truly care about finding the right fit for each client. Will definitely use again!",
     name: "Amanda Foster",
-    image: "/placeholder.svg?height=80&width=80",
+   image:"/img66.jpg",
   },
 ]
 
@@ -118,8 +119,8 @@ export default function TestimonialsCarousel() {
                       <Image
                         src={testimonial.image || "/placeholder.svg"}
                         alt={testimonial.name}
-                        width={60}
-                        height={60}
+                        width={110}
+                        height={110}
                         className="rounded-full object-cover border-4 border-white shadow-md mb-2"
                       />
                       <cite className="text-slate-800 font-semibold text-lg not-italic">
