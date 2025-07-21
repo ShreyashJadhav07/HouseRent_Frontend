@@ -3,7 +3,14 @@ import axios from "axios";
 export const ENDPOINT ={
     //auth
     login: "/auth/login", 
-    signup:"/auth/signup"
+    signup:"/auth/signup",
+    logout:"/auth/logout",
+    forgetPassword: "/auth/forgetPassword",
+    resetPassword: "/auth/resetPassword",
+
+    user: "/user",
+    addToWishlist: "/user/wishlist",
+    getWishlist: "/user/wishlist",
 
 
 }
