@@ -1,6 +1,48 @@
+"use client"
 import Image from "next/image"
 import { MapPin, Star } from "lucide-react"
 import RentalPropertyPage from "@/components/atom/propertyCard"
+import { api, ENDPOINT } from "@/lib/api"
+import { toast } from "sonner"
+
+const handleAddToWishlist = async () => {
+  const listing = {
+    id: 10,
+    title: "Urban Oasis",
+    location: "Downtown, Chicago",
+    price: 32000,
+ 
+    bedrooms: 2,
+    image: "/img16.jpg"
+  }
+  
+  try {
+    // First check if you're authenticated
+    console.log('Checking if user is authenticated...');
+    const userCheck = await api.get(ENDPOINT.user);
+    console.log('User authenticated:', userCheck.data);
+    
+    console.log('Adding to wishlist...');
+    const res = await api.post(ENDPOINT.addToWishlist, listing);
+    console.log('Wishlist response:', res.data);
+    
+    if (res.data.status === "success") {
+      toast("Added to wishlist successfully!");
+    } else {
+      toast("Failed to add to wishlist");
+    }
+  } catch (err) {
+    console.error('Full error object:', err);
+    console.error('Error response:', err.response?.data);
+    console.error('Error status:', err.response?.status);
+    
+    if (err.response?.status === 401) {
+      toast.error("Please login first to add items to wishlist");
+    } else {
+      toast.error(err.response?.data?.message || "Something went wrong");
+    }
+  }
+}
 
 export default function LuxuryRetreatListing() {
   return (
@@ -30,11 +72,11 @@ export default function LuxuryRetreatListing() {
           </div>
 
           {/* Featured Badge */}
-          <div className="bg-purple-600 text-white px-4 py-2 rounded-sm flex items-center">
-            <Star className="w-4 h-4 mr-2 fill-current" />
-            <span className="text-sm font-medium tracking-wide">FEATURED</span>
+          <div className="bg-purple-600 text-white px-4 py-2 rounded-sm flex items-center" onClick={handleAddToWishlist}>
+                    <Star className="w-4 h-4 mr-2 fill-current" />
+                    <span className="text-sm font-medium tracking-wide cursor-pointer">Add To WishList</span>
+                  </div>
           </div>
-        </div>
 
         {/* Image Gallery Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 h-auto lg:h-[600px]">

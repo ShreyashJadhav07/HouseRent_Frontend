@@ -9,7 +9,7 @@ export const navigationItems = [
   { name: "HOME", href: "/" },
   { name: "LISTINGS", href: "/listings" },
   { name: "LOCATIONS", href: "/locations" },
-  { name: "WISHLIST", href: "/wishlist" },
+  { name: "WISHLIST", href: "/watchlist" },
   { name: "PREMIUM", href: "/premium" },
   { name: "ABOUT US", href: "/about" },
   { name: "CONTACT US", href: "/contact" },
