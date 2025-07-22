@@ -202,6 +202,7 @@ import { useDispatch } from "react-redux"
 import { userLoggedInDetails } from "@/redux/userSlice"
 
 export default function RentalPropertyPage({
+  brokerId,
   brokerImage,
   brokerName,
   brokerLocation,
@@ -232,6 +233,7 @@ export default function RentalPropertyPage({
         email,
         phone,
         propertyId,
+        brokerId,
         brokerName,
         brokerLocation,
         propertyTitle: title, 
