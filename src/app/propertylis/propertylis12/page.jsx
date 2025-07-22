@@ -147,7 +147,20 @@ export default function LuxuryRetreatListing() {
         </div>
       </div>
     </div>
-    <RentalPropertyPage></RentalPropertyPage>
+    <RentalPropertyPage
+           brokerImage="/brokerimg5.png"
+         brokerName="kate smith"
+        brokerLocation="Pheonix, USA"
+       propertyId={14}
+    title= "Seaside Paradise"
+    location= "La Jolla, Phoenix"
+    image="/img22.jpg"
+    price={10000}
+    guest={2}
+    bedrooms={2}
+                                                     
+        />
+ 
     </>
   )
 }

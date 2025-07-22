@@ -147,7 +147,19 @@ export default function LuxuryRetreatListing() {
         </div>
       </div>
     </div>
-    <RentalPropertyPage></RentalPropertyPage>
+    <RentalPropertyPage
+    brokerImage="/brokerimg2.png"
+    brokerName="Justin Kane"
+    brokerLocation="Denver, USA"
+    propertyId={1}
+    title= "Luxury Retreat"
+    location= "Pacific, Denver"
+     image="/img4.jpg"
+    price={27000}
+    guest={2}
+    bedrooms={3}
+    
+    />
     </>
   )
 }

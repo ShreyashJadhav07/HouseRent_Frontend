@@ -146,7 +146,26 @@ export default function LuxuryRetreatListing() {
         </div>
       </div>
     </div>
-    <RentalPropertyPage></RentalPropertyPage>
+     <RentalPropertyPage
+                     brokerImage="/brokerimg6.png"
+                     brokerName="John Doe"
+                     brokerLocation="San Diego, USA"
+                     
+     /> 
+      <RentalPropertyPage
+                brokerImage="/brokerimg6.png"
+              brokerName="John Doe"
+             brokerLocation="San Diego, USA"
+            propertyId={15}
+         title= "Mountain Escape"
+         location= "Aspen, San Diego"
+         image="/img23.jpg"
+         price={45000}
+         guest={2}
+         bedrooms={3}
+                                                          
+             />
+
     </>
   )
 }

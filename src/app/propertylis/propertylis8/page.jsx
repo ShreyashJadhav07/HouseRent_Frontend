@@ -145,7 +145,20 @@ export default function LuxuryRetreatListing() {
         </div>
       </div>
     </div>
-    <RentalPropertyPage></RentalPropertyPage>
+           <RentalPropertyPage
+                               brokerImage="/brokerimg4.png"
+                               brokerName="Smith paul"
+                               brokerLocation="New York, USA"
+                               propertyId={12}
+                               title= "Historic Charm"
+                               location= "Savannah, New York"
+                               image="/img18.jpg"
+                               price={18000}
+                               guest={2}
+                               bedrooms={2}
+                               
+             />
+ 
     </>
   )
 }

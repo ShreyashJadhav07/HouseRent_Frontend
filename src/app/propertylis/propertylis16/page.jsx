@@ -145,7 +145,22 @@ export default function LuxuryRetreatListing() {
         </div>
       </div>
     </div>
-    <RentalPropertyPage></RentalPropertyPage>
+    
+              <RentalPropertyPage
+                            brokerImage="/brokerimg7.png"
+                          brokerName="lucas jackson"
+                         brokerLocation="San Francisco, USA"
+                        propertyId={18}
+                     title= "Historic Charm"
+                     location= "Savannah, San Francisco"
+                     image="/img26.jpg"
+                     price={18000}
+                     guest={2}
+                     bedrooms={2}
+                                                                      
+
+                         />
+
     </>
   )
 }

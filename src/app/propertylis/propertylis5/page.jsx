@@ -147,7 +147,20 @@ export default function LuxuryRetreatListing() {
         </div>
       </div>
     </div>
-    <RentalPropertyPage></RentalPropertyPage>
+      <RentalPropertyPage
+             brokerImage="/brokerimg3.png"
+             brokerName="Harry leon"
+             brokerLocation="Los Angeles, USA"
+             propertyId={9}
+             title= "Mountain Escape"
+             location= "Aspen, losAngeles"
+              image="/img5.jpg"
+             price={45000}
+             guest={2}
+             bedrooms={3}
+             
+             />
+
     </>
   )
 }

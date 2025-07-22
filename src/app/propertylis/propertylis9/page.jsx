@@ -145,7 +145,20 @@ export default function LuxuryRetreatListing() {
         </div>
       </div>
     </div>
-    <RentalPropertyPage></RentalPropertyPage>
+      <RentalPropertyPage
+                                   brokerImage="/brokerimg4.png"
+                                   brokerName="Smith paul"
+                                   brokerLocation="New York, USA"
+                                   propertyId={5}
+                                   title= "Luxury Retreat"
+                                   location= "Pacific, New York"
+                                   image="/img19.jpg"
+                                   price={270000}
+                                   guest={2}
+                                   bedrooms={2}
+                                   
+                 />
+
     </>
   )
 }

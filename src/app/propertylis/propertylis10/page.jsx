@@ -147,7 +147,26 @@ export default function LuxuryRetreatListing() {
         </div>
       </div>
     </div>
-    <RentalPropertyPage></RentalPropertyPage>
+    <RentalPropertyPage
+                  brokerImage="/brokerimg5.png"
+                  brokerName="kate smith"
+                  brokerLocation="Pheonix, USA"
+                  
+             />  
+                   <RentalPropertyPage
+                                                brokerImage="/brokerimg5.png"
+                                                brokerName="kate smith"
+                                                brokerLocation="Pheonix, USA"
+                                                propertyId={6}
+                                                title= "Modern Chic"
+                                                location= "Murray Hill, Phoenix"
+                                                image="/img20.jpg"
+                                                price={21000}
+                                                guest={2}
+                                                bedrooms={1}
+                                                
+                              />
+    
     </>
   )
 }

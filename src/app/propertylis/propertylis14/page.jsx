@@ -146,7 +146,20 @@ export default function LuxuryRetreatListing() {
         </div>
       </div>
     </div>
-    <RentalPropertyPage></RentalPropertyPage>
+     <RentalPropertyPage
+                  brokerImage="/brokerimg6.png"
+                brokerName="John Doe"
+               brokerLocation="San Diego, USA"
+              propertyId={16}
+           title= "Urban Oasis"
+           location= "Downtown, San Diego"
+           image="/img24.jpg"
+           price={32000}
+           guest={2}
+           bedrooms={2}
+                                                            
+               />
+
     </>
   )
 }

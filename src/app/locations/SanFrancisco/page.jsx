@@ -39,6 +39,10 @@ export default function sanFranciscoPage() {
         {/* Listings Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {listing.map((item) => (
+            <Link
+              key={item.id}
+              href={item.href}
+            >
             <Card
               key={item.id}
               className="group cursor-pointer border-0 shadow-none bg-white/60 backdrop-blur-sm hover:bg-white/80 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 rounded-2xl overflow-hidden"
@@ -97,6 +101,7 @@ export default function sanFranciscoPage() {
                 </div>
               </CardContent>
             </Card>
+            </Link>
           ))}
         </div>
       </section>

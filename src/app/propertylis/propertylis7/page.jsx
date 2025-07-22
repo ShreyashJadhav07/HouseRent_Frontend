@@ -148,7 +148,21 @@ export default function LuxuryRetreatListing() {
         </div>
       </div>
     </div>
-    <RentalPropertyPage></RentalPropertyPage>
+
+           <RentalPropertyPage
+                        brokerImage="/brokerimg4.png"
+                        brokerName="Smith paul"
+                        brokerLocation="New York, USA"
+                        propertyId={11}
+                        title= "Beachfront villa"
+                        location= "Malibu, New York"
+                        image="/img17.jpg"
+                        price={85000}
+                        guest={2}
+                        bedrooms={4}
+                        
+                        />
+ 
     </>
   )
 }

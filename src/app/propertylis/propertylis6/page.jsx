@@ -9,7 +9,7 @@ const handleAddToWishlist = async () => {
   const listing = {
     id: 10,
     title: "Urban Oasis",
-    location: "Downtown, LosA",
+    location: "Downtown, LosAngeles",
     price: 32000,
  
     bedrooms: 2,
@@ -146,7 +146,20 @@ export default function LuxuryRetreatListing() {
         </div>
       </div>
     </div>
-    <RentalPropertyPage></RentalPropertyPage>
+     <RentalPropertyPage
+                 brokerImage="/brokerimg3.png"
+                 brokerName="Harry leon"
+                 brokerLocation="Los Angeles, USA"
+                 propertyId={10}
+                 title= "Urban Oasis"
+                 location= "Downtown, LosAngeles"
+                 image="/img16.jpg"
+                 price={32000}
+                 guest={2}
+                 bedrooms={2}
+                 
+                 />
+
     </>
   )
 }

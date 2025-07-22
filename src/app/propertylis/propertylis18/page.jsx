@@ -146,7 +146,22 @@ export default function LuxuryRetreatListing() {
         </div>
       </div>
     </div>
-    <RentalPropertyPage></RentalPropertyPage>
+  
+                              <RentalPropertyPage
+                                            brokerImage="/brokerimg8.png"
+                                          brokerName="olivia brown"
+                                         brokerLocation="Seattle, USA"
+                                        propertyId={20}
+                                     title= "Modern Chic"
+                                     location= "Murray Hill, Seattle"
+                                     image="/img28.jpg"
+                                     price={21000}
+                                     guest={2}
+                                     bedrooms={1}
+                                                                                      
+                
+                                         />
+
     </>
   )
 }

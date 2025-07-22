@@ -148,7 +148,21 @@ export default function LuxuryRetreatListing() {
         </div>
       </div>
     </div>
-    <RentalPropertyPage></RentalPropertyPage>
+   
+        <RentalPropertyPage
+           brokerImage="/brokerimg3.png"
+           brokerName="Harry leon"
+           brokerLocation="Los Angeles, USA"
+           propertyId={4}
+           title= "Seaside Paradise"
+           location= "La Jolla, Los Angeles"
+            image="/img5.jpg"
+           price={1000000}
+           guest={2}
+           bedrooms={4}
+           
+           />
+ 
     </>
   )
 }

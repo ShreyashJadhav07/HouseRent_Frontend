@@ -147,7 +147,21 @@ export default function LuxuryRetreatListing() {
         </div>
       </div>
     </div>
-    <RentalPropertyPage></RentalPropertyPage>
+                       <RentalPropertyPage
+                                                    brokerImage="/brokerimg5.png"
+                                                    brokerName="kate smith"
+                                                    brokerLocation="Pheonix, USA"
+                                                    propertyId={13}
+                                                    title= "Panoramic Views"
+                                                    location= "Biltmore, Phoenix"
+                                                    image="/img21.jpg"
+                                                    price={110000}
+                                                    guest={2}
+                                                    bedrooms={2}
+                                                    
+                                  />
+
+    
     </>
   )
 }

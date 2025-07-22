@@ -2,8 +2,9 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Home } from "lucide-react";
+import { Bell, Home } from "lucide-react";
 import ProfileSheet from "../atom/ProfileSheet";
+import notificationpage from "@/app/notifications/page";
 
 export const navigationItems = [
   { name: "HOME", href: "/" },
@@ -42,9 +43,18 @@ export default function Header() {
           </nav>
 
           {/* ProfileSheet */}
-          <div className="ml-4">
-            <ProfileSheet />
-          </div>
+         <div className="flex items-center gap-4 relative">
+  {/* 🔔 Notification Bell */}
+  <Link href="/notifications" className="relative">
+    <Bell className="h-6 w-6 text-gray-700" />
+    {notificationpage.length > 0 && (
+      <span className="absolute top-0 right-0 h-2 w-2 bg-red-500 rounded-full"></span>
+    )}
+  </Link>
+
+  {/* 👤 Profile */}
+  <ProfileSheet />
+</div>
         </div>
       </div>
     </header>

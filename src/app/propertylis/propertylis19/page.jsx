@@ -146,7 +146,21 @@ export default function LuxuryRetreatListing() {
         </div>
       </div>
     </div>
-    <RentalPropertyPage></RentalPropertyPage>
+          <RentalPropertyPage
+                          brokerImage="/brokerimg8.png"
+                          brokerName="olivia brown"
+                                               brokerLocation="Seattle, USA"
+                                              propertyId={21}
+                                           title= "Panoramic Views"
+                                           location= "Biltmore, Seattle"
+                                           image="/img27.jpg"
+                                           price={110000}
+                                           guest={2}
+                                           bedrooms={2}
+                                                                                            
+                      
+                                               />
+  
     </>
   )
 }

@@ -146,7 +146,28 @@ export default function LuxuryRetreatListing() {
         </div>
       </div>
     </div>
-    <RentalPropertyPage></RentalPropertyPage>
+       <RentalPropertyPage
+                              brokerImage="/brokerimg8.png"
+                              brokerName="olivia brown"
+                              brokerLocation="Seattle, USA"
+                              
+              /> 
+              
+                            <RentalPropertyPage
+                                          brokerImage="/brokerimg8.png"
+                                        brokerName="olivia brown"
+                                       brokerLocation="Seattle, USA"
+                                      propertyId={19}
+                                   title= "Luxury Retreat"
+                                   location= "Pacific, Seattle"
+                                   image="/img29.jpg"
+                                   price={270000}
+                                   guest={2}
+                                   bedrooms={2}
+                                                                                    
+              
+                                       />
+
     </>
   )
 }
