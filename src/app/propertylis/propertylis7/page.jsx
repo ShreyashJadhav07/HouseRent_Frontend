@@ -9,7 +9,7 @@ const handleAddToWishlist = async () => {
   const listing = {
      id: 11,
     title: "Beachfront Villa",
-    location: "Malibu, California",
+    location: "Malibu, New York",
     price: 85000,
   
     bedrooms: 4,

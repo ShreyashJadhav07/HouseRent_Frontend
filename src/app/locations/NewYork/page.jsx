@@ -5,14 +5,14 @@ import { Users, Bed } from "lucide-react"
 import Link from "next/link"
 
 const listing = [
-  {
-    id: 1,
+   {
+    id: 5,
     title: "Luxury Retreat",
     location: "Pacific, NewYork",
     price: 270000,
-   
-    bedrooms: 3,
-    image: "/img4.jpg",
+    bedrooms: 1,
+    image: "/img19.jpg",
+   href:"/propertylis/propertylis9"
   },
    {
     id: 11,
@@ -22,6 +22,7 @@ const listing = [
   
     bedrooms: 4,
     image: "/img17.jpg",
+    href:"/propertylis/propertylis7"
   },
   {
     id: 12,
@@ -31,6 +32,7 @@ const listing = [
 
     bedrooms: 2,
     image: "/img18.jpg",
+    href:"/propertylis/propertylis8"
   },
 ]
 
@@ -56,6 +58,10 @@ export default function NewYork() {
         {/* Listings Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {listing.map((item) => (
+            <Link
+            key={item.id}
+            href={item.href}
+            >
             <Card
               key={item.id}
               className="group cursor-pointer border-0 shadow-none bg-white/60 backdrop-blur-sm hover:bg-white/80 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 rounded-2xl overflow-hidden"
@@ -114,6 +120,7 @@ export default function NewYork() {
                 </div>
               </CardContent>
             </Card>
+            </Link>
           ))}
         </div>
       </section>

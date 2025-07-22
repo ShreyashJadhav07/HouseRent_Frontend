@@ -48,7 +48,7 @@ const listing = [
   {
     id: 9,
     title: "Mountain Escape",
-    location: "Aspen, Colorado",
+    location: "Aspen,  LosAngeles",
     price: 45000,
     
     bedrooms: 3,
@@ -58,7 +58,7 @@ const listing = [
   {
     id: 10,
     title: "Urban Oasis",
-    location: "Downtown, Chicago",
+    location: "Downtown, LosAngeles",
     price: 32000,
  
     bedrooms: 2,
@@ -68,7 +68,7 @@ const listing = [
   {
     id: 11,
     title: "Beachfront Villa",
-    location: "Malibu, California",
+    location: "Malibu, NewYork",
     price: 85000,
   
     bedrooms: 4,
@@ -78,7 +78,7 @@ const listing = [
   {
     id: 12,
     title: "Historic Charm",
-    location: "Savannah, Georgia",
+    location: "Savannah, NewYork",
     price: 18000,
 
     bedrooms: 2,

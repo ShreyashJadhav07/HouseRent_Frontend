@@ -9,7 +9,7 @@ const handleAddToWishlist = async () => {
   const listing = {
     id: 4,
     title: "Seaside Paradise",
-    location: "La Jolla, San Los Angeles",
+    location: "La Jolla, Los Angeles",
     price: 1000000,
  
     bedrooms: 4,

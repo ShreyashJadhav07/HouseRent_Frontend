@@ -5,32 +5,35 @@ import { Users, Bed } from "lucide-react"
 import Link from "next/link"
 
 const listing = [
- {
-    id: 8,
-    title: "Seaside Paradise",
-    location: "La Jolla, San Diego",
-    price: 10000,
-
-    bedrooms: 2,
-    image: "/img22.jpg",
-  },
   {
-    id: 9,
+    id: 15,
     title: "Mountain Escape",
     location: "Aspen, San Diego",
     price: 45000,
    
     bedrooms: 3,
     image: "/img23.jpg",
+    href:"/propertylis/propertylis13"
   },
   {
-    id: 10,
+    id: 16,
     title: "Urban Oasis",
-    location: "Downtown, San Diegoo",
+    location: "Downtown, San Diego",
     price: 32000,
    
     bedrooms: 2,
     image: "/img24.jpg",
+    href:"/propertylis/propertylis14"
+  },
+  {
+    id: 17,
+    title: "Beachfront Villa",
+    location: "Malibu, San Diego",
+    price: 85000,
+ 
+    bedrooms: 4,
+    image: "/img25.jpg",
+    href:"/propertylis/propertylis15"
   },
 
 ]
@@ -43,7 +46,7 @@ export default function sanDiegoPage() {
         <div className="mb-12">
           <div className="flex items-center justify-between">
             <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r bg-clip-text text-black">
-             San Diegoo
+             San Diego
             </h1>
             <div className="flex gap-4">
               
@@ -57,6 +60,10 @@ export default function sanDiegoPage() {
         {/* Listings Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {listing.map((item) => (
+            <Link
+            key={item.id}
+            href={item.href}
+            >
             <Card
               key={item.id}
               className="group cursor-pointer border-0 shadow-none bg-white/60 backdrop-blur-sm hover:bg-white/80 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 rounded-2xl overflow-hidden"
@@ -115,6 +122,7 @@ export default function sanDiegoPage() {
                 </div>
               </CardContent>
             </Card>
+            </Link>
           ))}
         </div>
       </section>

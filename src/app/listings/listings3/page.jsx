@@ -6,39 +6,41 @@ import Link from "next/link"
 
 const listing = [
   {
-    id: 5,
+    id: 19,
     title: "Luxury Retreat",
-    location: "Pacific, San Francisco",
+    location: "Pacific, Seattle",
     price: 270000,
     guests: 2,
     bedrooms: 2,
     image: "/img29.jpg",
+     href:"/propertylis/propertylis17"
   },
   {
-    id: 6,
+    id: 20,
     title: "Modern Chic",
-    location: "Murray Hill, New York",
+    location: "Murray Hill, Seattle",
     price: 210000,
 
     bedrooms: 1,
     image: "/img28.jpg",
+     href:"/propertylis/propertylis18"
   },
   {
-    id: 7,
+    id: 21,
     title: "Panoramic Views",
-    location: "Biltmore, Phoenix",
+    location: "Biltmore, Seattle",
     price: 110000,
 
     bedrooms: 2,
     image: "/img27.jpg",
+     href:"/propertylis/propertylis19"
   },
  
 
 ]
-
 export default function ListingsPage() {
   return (
-    <div className="min-h-screen ">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
       <section className="w-full max-w-7xl mx-auto px-4 py-8 md:py-12 lg:py-16">
         {/* Header */}
         <div className="mb-12">
@@ -58,8 +60,12 @@ export default function ListingsPage() {
         {/* Listings Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {listing.map((item) => (
+            <Link 
+            key={item.id}
+            href={item.href}
+            >
             <Card
-              key={item.id}
+              
               className="group cursor-pointer border-0 shadow-none bg-white/60 backdrop-blur-sm hover:bg-white/80 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 rounded-2xl overflow-hidden"
             >
               <CardContent className="p-0">
@@ -72,7 +78,7 @@ export default function ListingsPage() {
                   </div>
                   
                   {/* Property Image */}
-                  <div className="relative aspect-[4/3] overflow-hidden ">
+                  <div className="relative aspect-[4/3] overflow-hidden">
                     <img
                       src={item.image}
                       alt={item.title}
@@ -88,7 +94,7 @@ export default function ListingsPage() {
                   <div className="flex items-center gap-6 text-sm text-slate-600">
                     <div className="flex items-center gap-2">
                       <Users className="w-4 h-4 text-blue-500" />
-                     
+                 
                     </div>
                     <div className="flex items-center gap-2">
                       <Bed className="w-4 h-4 text-blue-500" />
@@ -113,22 +119,31 @@ export default function ListingsPage() {
                     <span className="text-2xl font-bold text-slate-900 group-hover:text-blue-700 transition-colors duration-300">
                       ${item.price}
                     </span>
-               
+              
                   </div>
                 </div>
               </CardContent>
             </Card>
+            </Link>
           ))}
         </div>
       </section>
-  <div className="flex justify-center mb-5">
- <Link
+<div className="flex justify-center gap-4 mt-5 mb-7">
+  <Link
     href="/listings"
     className="px-5 py-2 border border-gray-300 rounded-md bg-white text-black font-medium shadow-sm hover:bg-gray-100 transition"
   >
     Previous
   </Link>
+  <Link
+    href="/listings/listings3"
+    className="px-5 py-2 border border-gray-300 rounded-md bg-white text-black font-medium shadow-sm hover:bg-gray-100 transition"
+  >
+    Next
+  </Link>
 </div>
+
+
       <HelpingComponent/>
     </div>
   )

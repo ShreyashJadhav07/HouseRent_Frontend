@@ -9,7 +9,7 @@ const handleAddToWishlist = async () => {
   const listing = {
     id: 12,
     title: "Historic Charm",
-    location: "Savannah, Georgia",
+    location: "Savannah, NewYork",
     price: 18000,
     bedrooms: 2,
     image: "/img18.jpg",

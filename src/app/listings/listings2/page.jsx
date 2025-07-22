@@ -8,80 +8,80 @@ const listing = [
   {
     id: 5,
     title: "Luxury Retreat",
-    location: "Pacific, San Francisco",
+    location: "Pacific, NewYork",
     price: 270000,
     bedrooms: 1,
     image: "/img19.jpg",
-   href:"/propertylis/propertylis1"
+   href:"/propertylis/propertylis9"
   },
   {
     id: 6,
     title: "Modern Chic",
-    location: "Murray Hill, New York",
+    location: "Murray Hill, Phoenix",
     price: 21000,
 
     bedrooms: 1,
     image:"/img20.jpg",
-    href:"/propertylis/propertylis2"
+    href:"/propertylis/propertylis10"
   },
   {
-    id: 7,
+    id: 13,
     title: "Panoramic Views",
     location: "Biltmore, Phoenix",
     price: 110000,
 
     bedrooms: 2,
     image: "/img21.jpg",
-    href:"/propertylis/propertylis3"
+    href:"/propertylis/propertylis11"
   },
   {
-    id: 8,
+    id: 14,
     title: "Seaside Paradise",
-    location: "La Jolla, San Diego",
+    location: "La Jolla, Phoenix",
     price: 10000,
 
     bedrooms: 2,
     image: "/img22.jpg",
-    href:"/propertylis/propertylis4"
+    href:"/propertylis/propertylis12"
   },
   {
-    id: 9,
+    id: 15,
     title: "Mountain Escape",
-    location: "Aspen, Colorado",
+    location: "Aspen, San Diego",
     price: 45000,
    
     bedrooms: 3,
     image: "/img23.jpg",
-    href:"/propertylis/propertylis5"
+    href:"/propertylis/propertylis13"
   },
   {
-    id: 10,
+    id: 16,
     title: "Urban Oasis",
-    location: "Downtown, Chicago",
+    location: "Downtown, San Diego",
     price: 32000,
    
     bedrooms: 2,
     image: "/img24.jpg",
-    href:"/propertylis/propertylis6"
+    href:"/propertylis/propertylis14"
   },
   {
-    id: 11,
+    id: 17,
     title: "Beachfront Villa",
-    location: "Malibu, California",
+    location: "Malibu, San Diego",
     price: 85000,
  
     bedrooms: 4,
     image: "/img25.jpg",
-    href:"/propertylis/propertylis7"
+    href:"/propertylis/propertylis15"
   },
   {
-    id: 12,
+    id: 18,
     title: "Historic Charm",
-    location: "Savannah, Georgia",
+    location: "Savannah, San Francisco",
     price: 18000,
     bedrooms: 2,
     image:  "/img26.jpg",
-    href:"/propertylis/propertylis8"
+    href:"/propertylis/propertylis16"
   },
 ]
 

@@ -9,7 +9,7 @@ const handleAddToWishlist = async () => {
   const listing = {
     id: 10,
     title: "Urban Oasis",
-    location: "Downtown, Chicago",
+    location: "Downtown, LosA",
     price: 32000,
  
     bedrooms: 2,

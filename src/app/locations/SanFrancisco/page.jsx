@@ -5,23 +5,16 @@ import { Users, Bed } from "lucide-react"
 import Link from "next/link"
 
 const listing = [
-    {
-    id: 11,
-    title: "Beachfront Villa",
-    location: "Malibu, SanFrancisco",
-    price: 85000,
- 
-    bedrooms: 4,
-    image: "/img25.jpg",
-  },
-  {
-    id: 12,
+ {
+    id: 18,
     title: "Historic Charm",
-    location: "Savannah, SanFrancisco",
+    location: "Savannah, San Francisco",
     price: 18000,
     bedrooms: 2,
     image:  "/img26.jpg",
+    href:"/propertylis/propertylis16"
   },
+
 ]
 
 export default function sanFranciscoPage() {

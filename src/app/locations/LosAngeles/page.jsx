@@ -13,6 +13,7 @@ const listing = [
  
     bedrooms: 4,
     image: "/img5.jpg",
+    href:"/propertylis/propertylis4"
   },
   {
     id: 9,
@@ -22,6 +23,8 @@ const listing = [
     
     bedrooms: 3,
     image: "/img15.jpg",
+    href:"/propertylis/propertylis5"
+    
   },
   {
     id: 10,
@@ -31,6 +34,7 @@ const listing = [
  
     bedrooms: 2,
     image: "/img16.jpg",
+    href:"/propertylis/propertylis6"
   },
 
 
@@ -58,6 +62,10 @@ export default function LosAngelesPage() {
         {/* Listings Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {listing.map((item) => (
+            <Link
+            key={item.id}
+            href={item.href}
+            >
             <Card
               key={item.id}
               className="group cursor-pointer border-0 shadow-none bg-white/60 backdrop-blur-sm hover:bg-white/80 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 rounded-2xl overflow-hidden"
@@ -116,6 +124,7 @@ export default function LosAngelesPage() {
                 </div>
               </CardContent>
             </Card>
+            </Link>
           ))}
         </div>
       </section>

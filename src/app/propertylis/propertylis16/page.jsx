@@ -7,17 +7,16 @@ import { toast } from "sonner"
 
 const handleAddToWishlist = async () => {
   const listing = {
-    id: 9,
-    title: "Mountain Escape",
-    location: "Aspen, losAngeles",
-    price: 45000,
-    
-    bedrooms: 3,
-    image: "/img15.jpg",
+    id: 18,
+    title: "Historic Charm",
+    location: "Savannah, San Francisco",
+    price: 18000,
+    bedrooms: 2,
+    image:  "/img26.jpg",
   }
   
   try {
-    // First check if you're authenticated
+   
     console.log('Checking if user is authenticated...');
     const userCheck = await api.get(ENDPOINT.user);
     console.log('User authenticated:', userCheck.data);
@@ -43,7 +42,6 @@ const handleAddToWishlist = async () => {
     }
   }
 }
-
 
 export default function LuxuryRetreatListing() {
   return (
@@ -73,11 +71,11 @@ export default function LuxuryRetreatListing() {
           </div>
 
           {/* Featured Badge */}
-          <div className="bg-purple-600 text-white px-4 py-2 rounded-sm flex items-center" onClick={handleAddToWishlist}>
+            <div className="bg-purple-600 text-white px-4 py-2 rounded-sm flex items-center" onClick={handleAddToWishlist}>
                     <Star className="w-4 h-4 mr-2 fill-current" />
                     <span className="text-sm font-medium tracking-wide cursor-pointer">Add To WishList</span>
                   </div>
-          </div>
+              </div>
 
         {/* Image Gallery Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 h-auto lg:h-[600px]">

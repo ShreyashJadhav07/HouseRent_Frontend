@@ -6,31 +6,34 @@ import Link from "next/link"
 
 const listing = [
   {
-    id: 5,
+    id: 19,
     title: "Luxury Retreat",
     location: "Pacific, Seattle",
     price: 270000,
     guests: 2,
     bedrooms: 2,
     image: "/img29.jpg",
+     href:"/propertylis/propertylis17"
   },
   {
-    id: 6,
+    id: 20,
     title: "Modern Chic",
-    location: "Murray Hill,Seattle",
+    location: "Murray Hill, Seattle",
     price: 210000,
 
     bedrooms: 1,
     image: "/img28.jpg",
+     href:"/propertylis/propertylis18"
   },
   {
-    id: 7,
+    id: 21,
     title: "Panoramic Views",
     location: "Biltmore, Seattle",
     price: 110000,
 
     bedrooms: 2,
     image: "/img27.jpg",
+     href:"/propertylis/propertylis19"
   },
  
 
@@ -58,6 +61,11 @@ export default function SeattlePage() {
         {/* Listings Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {listing.map((item) => (
+            <Link
+            key={item.id}
+            href={item.href}
+            >
+            
             <Card
               key={item.id}
               className="group cursor-pointer border-0 shadow-none bg-white/60 backdrop-blur-sm hover:bg-white/80 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 rounded-2xl overflow-hidden"
@@ -116,6 +124,7 @@ export default function SeattlePage() {
                 </div>
               </CardContent>
             </Card>
+            </Link>
           ))}
         </div>
       </section>

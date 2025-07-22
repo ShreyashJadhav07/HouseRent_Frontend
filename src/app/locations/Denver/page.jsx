@@ -13,6 +13,7 @@ const listing = [
    
     bedrooms: 3,
     image: "/img4.jpg",
+    href:"/propertylis/propertylis1"
   },
   {
     id: 2,
@@ -22,6 +23,7 @@ const listing = [
    
     bedrooms: 3,
     image: "/img6.jpg",
+     href:"/propertylis/propertylis2"
   },
   {
     id: 3,
@@ -31,6 +33,7 @@ const listing = [
    
     bedrooms: 2,
     image: "/img7.jpg",
+    href:"/propertylis/propertylis3"
   },
 
 ]
@@ -57,6 +60,10 @@ export default function DenverPage() {
         {/* Listings Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {listing.map((item) => (
+            <Link
+            key={item.id}
+            href={item.href}
+            >
             <Card
               key={item.id}
               className="group cursor-pointer border-0 shadow-none bg-white/60 backdrop-blur-sm hover:bg-white/80 hover:shadow-2xl hover:shadow-blue-500/10 transition-all duration-500 rounded-2xl overflow-hidden"
@@ -115,6 +122,7 @@ export default function DenverPage() {
                 </div>
               </CardContent>
             </Card>
+            </Link>
           ))}
         </div>
       </section>
