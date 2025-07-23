@@ -147,6 +147,7 @@ export default function LuxuryRetreatListing() {
     </div>
     
               <RentalPropertyPage
+                                      brokerId="687fccfcacdbea444f5e43d1"
                             brokerImage="/brokerimg7.png"
                           brokerName="lucas jackson"
                          brokerLocation="San Francisco, USA"

@@ -14,6 +14,10 @@ export const ENDPOINT ={
 
 
     bookAppointment: "/appointment/book",
+    getNotifications:"/notifications",
+
+    payment: "/payment/order",
+    updatePremium: "/payment/update-premium-access",
     
 
 

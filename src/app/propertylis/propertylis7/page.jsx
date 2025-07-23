@@ -150,6 +150,7 @@ export default function LuxuryRetreatListing() {
     </div>
 
            <RentalPropertyPage
+                        brokerId="687fccfcacdbea444f5e43d1"
                         brokerImage="/brokerimg4.png"
                         brokerName="Smith paul"
                         brokerLocation="New York, USA"
@@ -162,7 +163,8 @@ export default function LuxuryRetreatListing() {
                         bedrooms={4}
                         
                         />
- 
+
+     
     </>
   )
 }

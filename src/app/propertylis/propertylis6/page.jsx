@@ -147,7 +147,8 @@ export default function LuxuryRetreatListing() {
       </div>
     </div>
      <RentalPropertyPage
-                 brokerImage="/brokerimg3.png"
+     brokerId="687fccfcacdbea444f5e43d1"
+      brokerImage="/brokerimg3.png"
                  brokerName="Harry leon"
                  brokerLocation="Los Angeles, USA"
                  propertyId={10}
@@ -159,7 +160,8 @@ export default function LuxuryRetreatListing() {
                  bedrooms={2}
                  
                  />
-
+                       
+        
     </>
   )
 }

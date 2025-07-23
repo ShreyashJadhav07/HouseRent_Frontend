@@ -154,6 +154,7 @@ export default function LuxuryRetreatListing() {
               /> 
               
                             <RentalPropertyPage
+                                                    brokerId="687fccfcacdbea444f5e43d1"
                                           brokerImage="/brokerimg8.png"
                                         brokerName="olivia brown"
                                        brokerLocation="Seattle, USA"

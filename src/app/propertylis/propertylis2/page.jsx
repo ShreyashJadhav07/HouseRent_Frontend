@@ -150,18 +150,20 @@ export default function LuxuryRetreatListing() {
       </div>
     </div>
         <RentalPropertyPage
+        brokerId="687fccfcacdbea444f5e43d1"
         brokerImage="/brokerimg2.png"
         brokerName="Justin Kane"
         brokerLocation="Denver, USA"
-        propertyId={1}
-        title= "Luxury Retreat"
-        location= "Pacific, Denver"
-        image="/img4.jpg"
-        price={27000}
+        propertyId={2}
+        title= "Modern Chic"
+        location= "Murray Hill, Denver"
+        image="/img6.jpg"
+        price={21000}
         guest={2}
         bedrooms={3}
         
         />
+        
     </>
   )
 }

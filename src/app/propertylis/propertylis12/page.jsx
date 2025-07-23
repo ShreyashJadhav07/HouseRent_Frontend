@@ -148,6 +148,7 @@ export default function LuxuryRetreatListing() {
       </div>
     </div>
     <RentalPropertyPage
+                            brokerId="687fccfcacdbea444f5e43d1"
            brokerImage="/brokerimg5.png"
          brokerName="kate smith"
         brokerLocation="Pheonix, USA"

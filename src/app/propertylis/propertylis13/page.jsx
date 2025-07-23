@@ -153,6 +153,7 @@ export default function LuxuryRetreatListing() {
                      
      /> 
       <RentalPropertyPage
+                              brokerId="687fccfcacdbea444f5e43d1"
                 brokerImage="/brokerimg6.png"
               brokerName="John Doe"
              brokerLocation="San Diego, USA"
