@@ -10,7 +10,7 @@ const handleAddToWishlist = async () => {
     id: 18,
     title: "Historic Charm",
     location: "Savannah, San Francisco",
-    price: 18000,
+    price: 1800,
     bedrooms: 2,
     image:  "/img26.jpg",
   }
@@ -47,7 +47,7 @@ export default function LuxuryRetreatListing() {
   return (
     <>
   
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white pt-15">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Breadcrumb Navigation */}
         <nav className="mb-8">
@@ -63,10 +63,10 @@ export default function LuxuryRetreatListing() {
         {/* Header Section */}
         <div className="flex justify-between items-start mb-8">
           <div>
-            <h1 className="text-4xl md:text-5xl font-light text-gray-900 mb-4">Luxury Retreat</h1>
+            <h1 className="text-4xl md:text-5xl font-light text-gray-900 mb-4">Historic Charmt</h1>
             <div className="flex items-center text-gray-600">
               <MapPin className="w-5 h-5 mr-2" />
-              <span className="text-lg">Pacific, San Francisco</span>
+              <span className="text-lg">Savannah, San Francisco</span>
             </div>
           </div>
 

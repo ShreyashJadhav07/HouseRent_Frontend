@@ -9,7 +9,7 @@ const listing = [
     id: 4,
     title: "Seaside Paradise",
     location: "La Jolla, LosAngeles",
-    price: 1000000,
+    price: 1000,
  
     bedrooms: 4,
     image: "/img5.jpg",
@@ -19,7 +19,7 @@ const listing = [
     id: 9,
     title: "Mountain Escape",
     location: "Aspen, LosAngeles",
-    price: 45000,
+    price: 4500,
     
     bedrooms: 3,
     image: "/img15.jpg",
@@ -30,7 +30,7 @@ const listing = [
     id: 10,
     title: "Urban Oasis",
     location: "Downtown, LosAngeles",
-    price: 32000,
+    price: 3200,
  
     bedrooms: 2,
     image: "/img16.jpg",
@@ -42,7 +42,7 @@ const listing = [
 
 export default function LosAngelesPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 pt-10">
       <section className="w-full max-w-7xl mx-auto px-4 py-8 md:py-12 lg:py-16">
         {/* Header */}
         <div className="mb-12">
@@ -51,10 +51,16 @@ export default function LosAngelesPage() {
               LosAngeles
             </h1>
             <div className="flex gap-4">
+              <Link
+              href="/locations"
+              >
+
+              <Button className="cursor-pointer bg-gradient-to-r from-purple-600 to-pink-500 text-white px-6 py-3 rounded font-semibold  ">
+                See By Locations
+              </Button>
+              </Link>
               
-              <select className="px-4 py-2 bg-white/80 backdrop-blur-sm border border-slate-200 rounded-xl text-sm font-medium text-slate-700 hover:border-blue-300 transition-colors">
-                <option>Select by Location</option>
-              </select>
+             
             </div>
           </div>
         </div>
@@ -117,7 +123,7 @@ export default function LosAngelesPage() {
                   {/* Price */}
                   <div className="flex items-baseline gap-1 pt-2">
                     <span className="text-2xl font-bold text-slate-900 group-hover:text-blue-700 transition-colors duration-300">
-                      ${item.price}
+                      ${item.price} / night
                     </span>
                    
                   </div>

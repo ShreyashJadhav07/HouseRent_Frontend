@@ -9,7 +9,7 @@ const listing = [
     id: 1,
     title: "Luxury Retreat",
     location: "Pacific, Denver",
-    price: 270000,
+    price: 2700,
    
     bedrooms: 3,
     image: "/img4.jpg",
@@ -19,7 +19,7 @@ const listing = [
     id: 2,
     title: "Modern Chic",
     location: "Murray Hill, Denver",
-    price: 210000,
+    price: 2100,
    
     bedrooms: 3,
     image: "/img6.jpg",
@@ -29,7 +29,7 @@ const listing = [
     id: 3,
     title: "Panoramic Views",
     location: "Biltmore, Denver",
-    price: 110000,
+    price: 1100,
    
     bedrooms: 2,
     image: "/img7.jpg",
@@ -40,7 +40,7 @@ const listing = [
 
 export default function DenverPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 pt-10">
       <section className="w-full max-w-7xl mx-auto px-4 py-8 md:py-12 lg:py-16">
         {/* Header */}
         <div className="mb-12">
@@ -48,12 +48,14 @@ export default function DenverPage() {
             <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r bg-clip-text text-black">
               Denver
             </h1>
-            <div className="flex gap-4">
-              
-              <select className="px-4 py-2 bg-white/80 backdrop-blur-sm border border-slate-200 rounded-xl text-sm font-medium text-slate-700 hover:border-blue-300 transition-colors">
-                <option>Select by Location</option>
-              </select>
-            </div>
+           <Link
+              href="/locations"
+              >
+
+              <Button className="cursor-pointer bg-gradient-to-r from-purple-600 to-pink-500 text-white px-6 py-3 rounded font-semibold  ">
+                See By Locations
+              </Button>
+              </Link>
           </div>
         </div>
 
@@ -115,7 +117,7 @@ export default function DenverPage() {
                   {/* Price */}
                   <div className="flex items-baseline gap-1 pt-2">
                     <span className="text-2xl font-bold text-slate-900 group-hover:text-blue-700 transition-colors duration-300">
-                      ${item.price}
+                      ${item.price} / night
                     </span>
                    
                   </div>

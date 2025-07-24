@@ -8,6 +8,7 @@ import notificationpage from "@/app/notification/page";
 import { useEffect, useState } from "react";
 import { api, ENDPOINT } from "@/lib/api";
 import { useSelector } from "react-redux";
+import Image from "next/image";
 
 export const navigationItems = [
   { name: "HOME", href: "/" },
@@ -49,19 +50,31 @@ export default function Header() {
     <header className="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-white text-black shadow">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
+           <Image
+    src="/house2.png"
+
+    
+    alt="HomeEasy Logo"
+    width={90}
+    height={50}
+    
+    priority
+  />
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <Home className="h-6 w-6 " />
-            <span className="text-xl font-semibold text-fuchsia-600 ">HomeEasy</span>
+
+
+        
+
           </Link>
 
           {/* Nav Links */}
-          <nav className="hidden lg:flex items-center space-x-8  text-fuchsia-600">
+          <nav className="hidden lg:flex items-center space-x-16  text-fuchsia-600">
             {navigationItems.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-sm font-medium transition-colors "
+                className="text-sm font-medium  bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent "
               >
                 {item.name}
               </Link>

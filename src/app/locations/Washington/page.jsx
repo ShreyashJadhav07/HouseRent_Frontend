@@ -11,10 +11,17 @@ export default function WashingtonPage() {
             <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r bg-clip-text text-black">
               Washington
             </h1>
-            <div className="flex gap-4">
-              <select className="px-4 py-2 bg-white/80 backdrop-blur-sm border border-slate-200 rounded-xl text-sm font-medium text-slate-700 hover:border-blue-300 transition-colors">
-                <option>Select by Location</option>
-              </select>
+           <div className="flex gap-4">
+              <Link
+              href="/locations"
+              >
+
+              <Button className="cursor-pointer bg-gradient-to-r from-purple-600 to-pink-500 text-white px-6 py-3 rounded font-semibold  ">
+                See By Locations
+              </Button>
+              </Link>
+              
+             
             </div>
           </div>
         </div>

@@ -10,7 +10,7 @@ const listing = [
     id: 6,
     title: "Modern Chic",
     location: "Murray Hill, Phoenix",
-    price: 21000,
+    price: 2100,
 
     bedrooms: 1,
     image:"/img20.jpg",
@@ -20,7 +20,7 @@ const listing = [
     id: 13,
     title: "Panoramic Views",
     location: "Biltmore, Phoenix",
-    price: 110000,
+    price: 1100,
 
     bedrooms: 2,
     image: "/img21.jpg",
@@ -30,7 +30,7 @@ const listing = [
     id: 14,
     title: "Seaside Paradise",
     location: "La Jolla, Phoenix",
-    price: 10000,
+    price: 1000,
 
     bedrooms: 2,
     image: "/img22.jpg",
@@ -41,7 +41,7 @@ const listing = [
 
 export default function PhoenixPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 pt-10">
       <section className="w-full max-w-7xl mx-auto px-4 py-8 md:py-12 lg:py-16">
         {/* Header */}
         <div className="mb-12">
@@ -50,10 +50,16 @@ export default function PhoenixPage() {
               Pheonix
             </h1>
             <div className="flex gap-4">
+              <Link
+              href="/locations"
+              >
+
+              <Button className="cursor-pointer bg-gradient-to-r from-purple-600 to-pink-500 text-white px-6 py-3 rounded font-semibold  ">
+                See By Locations
+              </Button>
+              </Link>
               
-              <select className="px-4 py-2 bg-white/80 backdrop-blur-sm border border-slate-200 rounded-xl text-sm font-medium text-slate-700 hover:border-blue-300 transition-colors">
-                <option>Select by Location</option>
-              </select>
+             
             </div>
           </div>
         </div>
@@ -117,7 +123,7 @@ export default function PhoenixPage() {
                   {/* Price */}
                   <div className="flex items-baseline gap-1 pt-2">
                     <span className="text-2xl font-bold text-slate-900 group-hover:text-blue-700 transition-colors duration-300">
-                      ${item.price}
+                      ${item.price} / night
                     </span>
                    
                   </div>

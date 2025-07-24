@@ -3,7 +3,7 @@ import { Home } from "lucide-react"
 
 export default function ServiceComponent() {
   return (
-    <section className="py-16 px-4 bg-gray-50">
+    <section className="py-16 px-4 bg-white">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">

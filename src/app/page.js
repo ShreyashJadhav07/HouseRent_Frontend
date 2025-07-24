@@ -10,10 +10,10 @@ import HelpingComponent from "@/components/section/helping";
 export default function Home() {
 
   const stats=[
-    {value:136,label:"Houses"},
-    {value:79,label:"Apartments"},
+    {value:22,label:"Houses"},
+    {value:10,label:"Apartments"},
     {value:843,label:"satisfied Client"},
-    {value:265,label:"Happy Owners"},
+    {value:29,label:"Happy Owners"},
     
     
   ];
@@ -47,7 +47,7 @@ export default function Home() {
         </p>
        <a
        href="#recent-listings"
-        className="bg-fuchsia-600 hover:bg-fuchsia-700 text-white px-6 py-3 rounded font-semibold inline-block"
+        className="bg-gradient-to-r from-purple-600 to-pink-500 text-white px-6 py-3 rounded font-semibold inline-block"
         >
   Recent Listings
 </a>

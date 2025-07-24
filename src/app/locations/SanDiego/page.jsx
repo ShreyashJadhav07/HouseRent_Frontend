@@ -9,7 +9,7 @@ const listing = [
     id: 15,
     title: "Mountain Escape",
     location: "Aspen, San Diego",
-    price: 45000,
+    price: 4500,
    
     bedrooms: 3,
     image: "/img23.jpg",
@@ -19,7 +19,7 @@ const listing = [
     id: 16,
     title: "Urban Oasis",
     location: "Downtown, San Diego",
-    price: 32000,
+    price: 3200,
    
     bedrooms: 2,
     image: "/img24.jpg",
@@ -29,7 +29,7 @@ const listing = [
     id: 17,
     title: "Beachfront Villa",
     location: "Malibu, San Diego",
-    price: 85000,
+    price: 8500,
  
     bedrooms: 4,
     image: "/img25.jpg",
@@ -40,7 +40,7 @@ const listing = [
 
 export default function sanDiegoPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 pt-10">
       <section className="w-full max-w-7xl mx-auto px-4 py-8 md:py-12 lg:py-16">
         {/* Header */}
         <div className="mb-12">
@@ -115,7 +115,7 @@ export default function sanDiegoPage() {
                   {/* Price */}
                   <div className="flex items-baseline gap-1 pt-2">
                     <span className="text-2xl font-bold text-slate-900 group-hover:text-blue-700 transition-colors duration-300">
-                      ${item.price}
+                      ${item.price} /night
                     </span>
                    
                   </div>

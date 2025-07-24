@@ -9,7 +9,7 @@ const listing = [
     id: 5,
     title: "Luxury Retreat",
     location: "Pacific, NewYork",
-    price: 270000,
+    price: 2700,
     bedrooms: 1,
     image: "/img19.jpg",
    href:"/propertylis/propertylis9"
@@ -18,7 +18,7 @@ const listing = [
     id: 11,
     title: "Beachfront Villa",
     location: "Malibu, NewYork",
-    price: 85000,
+    price: 8500,
   
     bedrooms: 4,
     image: "/img17.jpg",
@@ -28,7 +28,7 @@ const listing = [
     id: 12,
     title: "Historic Charm",
     location: "Savannah, NewYork",
-    price: 18000,
+    price: 1800,
 
     bedrooms: 2,
     image: "/img18.jpg",
@@ -38,7 +38,7 @@ const listing = [
 
 export default function NewYork() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50 pt-12">
       <section className="w-full max-w-7xl mx-auto px-4 py-8 md:py-12 lg:py-16">
         {/* Header */}
         <div className="mb-12">
@@ -46,11 +46,17 @@ export default function NewYork() {
             <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r bg-clip-text text-black">
               NewYork
             </h1>
-            <div className="flex gap-4">
+           <div className="flex gap-4">
+              <Link
+              href="/locations"
+              >
+
+              <Button className="cursor-pointer bg-gradient-to-r from-purple-600 to-pink-500 text-white px-6 py-3 rounded font-semibold  ">
+                See By Locations
+              </Button>
+              </Link>
               
-              <select className="px-4 py-2 bg-white/80 backdrop-blur-sm border border-slate-200 rounded-xl text-sm font-medium text-slate-700 hover:border-blue-300 transition-colors">
-                <option>Select by Location</option>
-              </select>
+             
             </div>
           </div>
         </div>
@@ -113,8 +119,8 @@ export default function NewYork() {
                   {/* Price */}
                   <div className="flex items-baseline gap-1 pt-2">
                     <span className="text-2xl font-bold text-slate-900 group-hover:text-blue-700 transition-colors duration-300">
-                      ${item.price}
-                    </span>
+                      ${item.price} / night
+                    </span> 
                    
                   </div>
                 </div>

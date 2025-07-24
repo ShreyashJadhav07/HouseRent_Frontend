@@ -85,7 +85,7 @@ const testimonials = [
 
 export default function TestimonialsCarousel() {
   return (
-    <div className="w-full py-16 px-4 bg-gradient-to-br from-slate-50 to-slate-100">
+    <div className="w-full py-16 px-4 bg-white">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">

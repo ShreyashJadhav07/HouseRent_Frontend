@@ -1,9 +1,10 @@
 import { Search, Mail, Users, ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export default function HelpingComponent() {
   return (
-    <section className="bg-gray-50 py-16 px-4">
+    <section className="bg-white py-16 px-4">
       <div className="max-w-4xl mx-auto">
         {/* Main Heading */}
         <h2 className="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-16">We're Here To Help</h2>
@@ -24,10 +25,15 @@ export default function HelpingComponent() {
               </p>
             </div>
             <div className="flex-shrink-0">
-              <Button variant="ghost" className="text-gray-900 hover:text-gray-700 font-medium group">
-                VIEW RENTALS
+              <Link
+              href="/listings"
+              className="cursor-pointer"
+              >
+              <Button variant="ghost" className="text-gray-900 hover:text-gray-700 font-medium group cursor-pointer">
+                VIEW LISTINGS
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Button>
+              </Link>
             </div>
           </div>
 
@@ -45,10 +51,14 @@ export default function HelpingComponent() {
               </p>
             </div>
             <div className="flex-shrink-0">
-              <Button variant="ghost" className="text-gray-900 hover:text-gray-700 font-medium group">
-                INQUIRE TODAY
+              <Link href="/contactUS"
+              className="cursor-pointer"
+              >
+              <Button variant="ghost" className="text-gray-900 hover:text-gray-700 font-medium group cursor-pointer">
+                CONTACT US
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Button>
+              </Link>
             </div>
           </div>
 
@@ -66,10 +76,15 @@ export default function HelpingComponent() {
               </p>
             </div>
             <div className="flex-shrink-0">
-              <Button variant="ghost" className="text-gray-900 hover:text-gray-700 font-medium group">
+              <Link
+              href="/contactUS"
+              >
+              
+              <Button variant="ghost" className="text-gray-900 hover:text-gray-700 font-medium group cursor-pointer">
                 APPLY & EARN
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </Button>
+              </Link>
             </div>
           </div>
         </div>

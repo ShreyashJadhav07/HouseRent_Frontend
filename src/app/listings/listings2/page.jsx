@@ -9,7 +9,7 @@ const listing = [
     id: 5,
     title: "Luxury Retreat",
     location: "Pacific, NewYork",
-    price: 270000,
+    price: 2700,
     bedrooms: 1,
     image: "/img19.jpg",
    href:"/propertylis/propertylis9"
@@ -18,7 +18,7 @@ const listing = [
     id: 6,
     title: "Modern Chic",
     location: "Murray Hill, Phoenix",
-    price: 21000,
+    price: 2100,
 
     bedrooms: 1,
     image:"/img20.jpg",
@@ -28,7 +28,7 @@ const listing = [
     id: 13,
     title: "Panoramic Views",
     location: "Biltmore, Phoenix",
-    price: 110000,
+    price: 1100,
 
     bedrooms: 2,
     image: "/img21.jpg",
@@ -38,7 +38,7 @@ const listing = [
     id: 14,
     title: "Seaside Paradise",
     location: "La Jolla, Phoenix",
-    price: 10000,
+    price: 1000,
 
     bedrooms: 2,
     image: "/img22.jpg",
@@ -48,7 +48,7 @@ const listing = [
     id: 15,
     title: "Mountain Escape",
     location: "Aspen, San Diego",
-    price: 45000,
+    price: 4500,
    
     bedrooms: 3,
     image: "/img23.jpg",
@@ -58,7 +58,7 @@ const listing = [
     id: 16,
     title: "Urban Oasis",
     location: "Downtown, San Diego",
-    price: 32000,
+    price: 3200,
    
     bedrooms: 2,
     image: "/img24.jpg",
@@ -68,7 +68,7 @@ const listing = [
     id: 17,
     title: "Beachfront Villa",
     location: "Malibu, San Diego",
-    price: 85000,
+    price: 8500,
  
     bedrooms: 4,
     image: "/img25.jpg",
@@ -78,7 +78,7 @@ const listing = [
     id: 18,
     title: "Historic Charm",
     location: "Savannah, San Francisco",
-    price: 18000,
+    price: 1800,
     bedrooms: 2,
     image:  "/img26.jpg",
     href:"/propertylis/propertylis16"
@@ -87,7 +87,7 @@ const listing = [
 
 export default function ListingsPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+    <div className="min-h-screen bg-white pt-20">
       <section className="w-full max-w-7xl mx-auto px-4 py-8 md:py-12 lg:py-16">
         {/* Header */}
         <div className="mb-12">
@@ -95,12 +95,14 @@ export default function ListingsPage() {
             <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r bg-clip-text text-black">
               All Listings
             </h1>
-            <div className="flex gap-4">
-              
-              <select className="px-4 py-2 bg-white/80 backdrop-blur-sm border border-slate-200 rounded-xl text-sm font-medium text-slate-700 hover:border-blue-300 transition-colors">
-                <option>Select by Location</option>
-              </select>
-            </div>
+           <Link
+              href="/locations"
+              >
+
+              <Button className="cursor-pointer bg-gradient-to-r from-purple-600 to-pink-500 text-white px-6 py-3 rounded font-semibold  ">
+                See By Locations
+              </Button>
+              </Link>
           </div>
         </div>
 
@@ -118,11 +120,7 @@ export default function ListingsPage() {
               <CardContent className="p-0">
                 {/* Featured Badge */}
                 <div className="relative">
-                  <div className="absolute top-4 left-4 z-10">
-                    <span className="px-3 py-1 bg-gradient-to-r from-purple-500 to-pink-500 text-white text-xs font-semibold rounded-full shadow-lg">
-                      ★ FEATURED
-                    </span>
-                  </div>
+                  
                   
                   {/* Property Image */}
                   <div className="relative aspect-[4/3] overflow-hidden">
@@ -164,7 +162,7 @@ export default function ListingsPage() {
                   {/* Price */}
                   <div className="flex items-baseline gap-1 pt-2">
                     <span className="text-2xl font-bold text-slate-900 group-hover:text-blue-700 transition-colors duration-300">
-                      ${item.price}
+                      ${item.price} / night
                     </span>
               
                   </div>
@@ -178,13 +176,13 @@ export default function ListingsPage() {
 <div className="flex justify-center gap-4 mt-5 mb-7">
   <Link
     href="/listings"
-    className="px-5 py-2 border border-gray-300 rounded-md bg-white text-black font-medium shadow-sm hover:bg-gray-100 transition"
+  className=" bg-gradient-to-r from-purple-600 to-pink-500 text-white px-6 py-3 rounded font-semibold inline-block"
   >
     Previous
   </Link>
   <Link
     href="/listings/listings3"
-    className="px-5 py-2 border border-gray-300 rounded-md bg-white text-black font-medium shadow-sm hover:bg-gray-100 transition"
+  className=" bg-gradient-to-r from-purple-600 to-pink-500 text-white px-6 py-3 rounded font-semibold inline-block"
   >
     Next
   </Link>

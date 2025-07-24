@@ -9,7 +9,7 @@ const listings = [
     id: 1,
     title: "Luxury Retreat",
     location: "Pacific, Denver",
-    price: 270000,
+    price: 2700,
    
     bedrooms: 3,
     image: "/img4.jpg",
@@ -19,7 +19,7 @@ const listings = [
     id: 2,
     title: "Modern Chic",
     location: "Murray Hill, Denver",
-    price: 210000,
+    price: 2100,
    
     bedrooms: 3,
     image: "/img6.jpg",
@@ -29,7 +29,7 @@ const listings = [
     id: 3,
     title: "Panoramic Views",
     location: "Biltmore, Denver",
-    price: 110000,
+    price: 1100,
    
     bedrooms: 2,
     image: "/img7.jpg",
@@ -39,7 +39,7 @@ const listings = [
     id: 4,
     title: "Seaside Paradise",
     location: "La Jolla,Los Angeles",
-    price: 1000000,
+    price: 1000,
  
     bedrooms: 4,
     image: "/img5.jpg",
@@ -64,9 +64,10 @@ export default function RecentListings() {
         className="cursor-pointer hover:scale-105 transition-transform duration-300"
         >
 
-        <p  className= "text-fuchsia-600 cursor-pointer ">
-          {"< SEE ALL LISTINGS"}
-        </p>
+      <p className="bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent cursor-pointer">
+  {"< SEE ALL LISTINGS"}
+    </p>
+
         </Link>
       </div>
 
@@ -119,7 +120,7 @@ export default function RecentListings() {
 
                 {/* Price */}
                 <p className="text-gray-900 font-medium">
-                  <span className="text-lg">${listing.price}</span>
+                  <span className="text-lg">${listing.price} / night</span>
                   <span className="text-gray-600"> </span>
                 </p>
               </div>
@@ -131,3 +132,5 @@ export default function RecentListings() {
     </section>
   )
 }
+
+

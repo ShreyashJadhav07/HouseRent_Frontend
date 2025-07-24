@@ -9,7 +9,7 @@ const listing = [
     id: 1,
     title: "Luxury Retreat",
     location: "Pacific, Denver",
-    price: 270000,
+    price: 2700,
    
     bedrooms: 3,
     image: "/img4.jpg",
@@ -19,7 +19,7 @@ const listing = [
     id: 2,
     title: "Modern Chic",
     location: "Murray Hill, Denver",
-    price: 210000,
+    price: 2100,
    
     bedrooms: 3,
     image: "/img6.jpg",
@@ -29,7 +29,7 @@ const listing = [
     id: 3,
     title: "Panoramic Views",
     location: "Biltmore, Denver",
-    price: 110000,
+    price: 1100,
    
     bedrooms: 2,
     image: "/img7.jpg",
@@ -39,7 +39,7 @@ const listing = [
     id: 4,
     title: "Seaside Paradise",
     location: "La Jolla, San Los Angeles",
-    price: 1000000,
+    price: 1000,
  
     bedrooms: 4,
     image: "/img5.jpg",
@@ -49,7 +49,7 @@ const listing = [
     id: 9,
     title: "Mountain Escape",
     location: "Aspen,  LosAngeles",
-    price: 45000,
+    price: 4500,
     
     bedrooms: 3,
     image: "/img15.jpg",
@@ -59,7 +59,7 @@ const listing = [
     id: 10,
     title: "Urban Oasis",
     location: "Downtown, LosAngeles",
-    price: 32000,
+    price: 3200,
  
     bedrooms: 2,
     image: "/img16.jpg",
@@ -69,7 +69,7 @@ const listing = [
     id: 11,
     title: "Beachfront Villa",
     location: "Malibu, NewYork",
-    price: 85000,
+    price: 8500,
   
     bedrooms: 4,
     image: "/img17.jpg",
@@ -79,7 +79,7 @@ const listing = [
     id: 12,
     title: "Historic Charm",
     location: "Savannah, NewYork",
-    price: 18000,
+    price: 1800,
 
     bedrooms: 2,
     image: "/img18.jpg",
@@ -89,7 +89,7 @@ const listing = [
 
 export default function ListingsPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+    <div className="min-h-screen bg-white pt-20">
       <section className="w-full max-w-7xl mx-auto px-4 py-8 md:py-12 lg:py-16">
         {/* Header */}
         <div className="mb-12">
@@ -98,10 +98,16 @@ export default function ListingsPage() {
               All Listings
             </h1>
             <div className="flex gap-4">
+              <Link
+              href="/locations"
+              >
+
+              <Button className="cursor-pointer bg-gradient-to-r from-purple-600 to-pink-500 text-white px-6 py-3 rounded font-semibold  ">
+                See By Locations
+              </Button>
+              </Link>
               
-              <select className="px-4 py-2 bg-white/80 backdrop-blur-sm border border-slate-200 rounded-xl text-sm font-medium text-slate-700 hover:border-blue-300 transition-colors">
-                <option>Select by Location</option>
-              </select>
+             
             </div>
           </div>
         </div>
@@ -167,7 +173,7 @@ export default function ListingsPage() {
                   {/* Price */}
                   <div className="flex items-baseline gap-1 pt-2">
                     <span className="text-2xl font-bold text-slate-900 group-hover:text-blue-700 transition-colors duration-300">
-                      ${item.price}
+                      ${item.price} / night
                     </span>
                    
                   </div>
@@ -181,7 +187,7 @@ export default function ListingsPage() {
       <div className="flex justify-center mt-1 mb-5">
  <Link
     href="/listings/listings2"
-    className="px-5 py-2 border border-gray-300 rounded-md bg-white text-black font-medium shadow-sm hover:bg-gray-100 transition"
+    className=" bg-gradient-to-r from-purple-600 to-pink-500 text-white px-6 py-3 rounded font-semibold inline-block"
   >
     Next
   </Link>
