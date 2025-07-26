@@ -20,9 +20,9 @@ export default function Home() {
   return (
     <>
     <div className="relative h-screen w-full text-white pt-16">
-      {/* Background image */}
+      
       <Image
-        src="/img3.jpg" // replace with your own image path
+        src="/img3.jpg" 
         alt="Dream Home"
         fill
         className="brightness-40 object-cover"
@@ -30,10 +30,10 @@ export default function Home() {
         priority
       />
 
-      {/* Overlay to darken the image for better text visibility */}
+  
       <div className="absolute inset-0 bg-opacity-50" />
 
-      {/* Content over image */}
+     
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
         <h3 className="text-sm md:text-base tracking-widest uppercase mb-2">
           A Place to Call Home

@@ -31,7 +31,7 @@ export default function AskSection() {
 
   return (
     <div className="w-full max-w-4xl mx-auto px-4 py-12 md:py-16 lg:py-20">
-      {/* Header Section */}
+    
       <div className="text-center mb-12 md:mb-16">
         <div className="flex justify-center mb-6">
           <div className="p-3 rounded-full bg-gray-100">
@@ -44,7 +44,6 @@ export default function AskSection() {
         </p>
       </div>
 
-      {/* FAQ Accordion */}
       <div className="max-w-3xl mx-auto">
         <Accordion type="single" collapsible className="space-y-4">
           {faqData.map((faq) => (

@@ -35,15 +35,15 @@ export default function AminitesComponent() {
   return (
     <section className="py-16 px-4 bg-gray-50">
       <div className="max-w-6xl mx-auto text-center">
-        {/* Header */}
+       
         <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Amenities</h2>
 
-        {/* Description */}
+       
         <p className="text-lg text-gray-600 mb-16 max-w-3xl mx-auto leading-relaxed">
           You can find detailed information about each rental, including photos, amenities, location, and rental terms.
         </p>
 
-        {/* Amenities Grid */}
+      
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-8 md:gap-12">
           {amenities.map((amenity, index) => {
             const IconComponent = amenity.icon

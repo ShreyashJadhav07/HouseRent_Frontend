@@ -1,135 +1,3 @@
-// "use client";
-
-// import { Card, CardContent } from "@/components/ui/card";
-// import { api, ENDPOINT } from "@/lib/api";
-// import { useEffect, useState } from "react";
-
-// export default function NotificationPage() {
-  
-//   const [notifications, setNotifications] = useState([]);
-//   const [loading, setLoading] = useState(true);
-
-//   const fetchNotifications = async () => {
-//     try {
-//       const res = await api.get(ENDPOINT.getNotifications);
-//       setNotifications(res.data.notifications);
-//     } catch (err) {
-//       console.error("Error fetching notifications:", err);
-//     } finally {
-//       setLoading(false);
-//     }
-//   };
-
-//   useEffect(() => {
-//     fetchNotifications();
-//   }, []);
-
-//   if (loading) {
-//     return <div className="text-center p-4">Loading notifications...</div>;
-//   }
-
-//   return (
-//     <div className="max-w-3xl mx-auto p-4">
-//       <h2 className="text-2xl font-bold mb-4">Notifications</h2>
-//       {notifications.length === 0 ? (
-//         <p className="text-gray-500">No notifications yet.</p>
-//       ) : (
-//         notifications.map((noti, idx) => (
-//           <Card key={idx} className="mb-4 shadow">
-//             <CardContent className="p-4">
-//               <p className="font-medium text-black">{noti.message}</p>
-//               <p className="text-sm text-gray-500 mt-1">
-//                 {new Date(noti.createdAt).toLocaleString()}
-//               </p>
-//             </CardContent>
-//           </Card>
-//         ))
-//       )}
-//     </div>
-//   );
-// }
-
-// "use client";
-
-// import { useEffect, useState } from "react";
-// import { useSelector } from "react-redux";
-// import { Card, CardContent } from "@/components/ui/card";
-// import { api, ENDPOINT } from "@/lib/api";
-// import { FolderLock } from "lucide-react";
-// import Link from "next/link";
-// import { cn } from "@/lib/utils";
-// import { buttonVariants } from "@/components/ui/button";
-
-// export default function NotificationPage() {
-//   const userData = useSelector((state) => state.user);
-//   const [notifications, setNotifications] = useState([]);
-//   const [loading, setLoading] = useState(true);
-
-//   const fetchNotifications = async () => {
-//     try {
-//       const res = await api.get(ENDPOINT.getNotifications);
-//       setNotifications(res.data.notifications || []);
-//     } catch (err) {
-//       console.error("Error fetching notifications:", err);
-//     } finally {
-//       setLoading(false);
-//     }
-//   };
-
-//   useEffect(() => {
-//     if (userData.isLoggedIn) {
-//       fetchNotifications();
-//     } else {
-//       setLoading(false);
-//     }
-//   }, [userData.isLoggedIn]);
-
-//   if (!userData.isLoggedIn) {
-//     return (
-//       <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
-//         <section className="w-full max-w-7xl mx-auto px-4 py-8 md:py-12 lg:py-16">
-//           <div className="flex flex-col items-center justify-center h-[60vh] text-center">
-//             <FolderLock className="w-20 h-20 mx-auto mb-6 text-slate-400" strokeWidth={1.2} />
-//             <h2 className="text-3xl font-bold text-slate-900 mb-4">Login Required</h2>
-//             <p className="text-slate-600 mb-8 max-w-md mx-auto text-lg">
-//               You need to be logged in to view your notifications. Please sign in to stay updated.
-//             </p>
-//             <Link 
-//               href="/login"
-//               className={cn(buttonVariants(), "bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-xl font-semibold transition-colors")}
-//             >
-//               Login
-//             </Link>
-//           </div>
-//         </section>
-//       </div>
-//     );
-//   }
-
-//   if (loading) {
-//     return <div className="text-center p-4">Loading notifications...</div>;
-//   }
-
-//   return (
-//     <div className="max-w-3xl mx-auto p-4">
-//       <h2 className="text-2xl font-bold mb-4">Notifications</h2>
-//       {notifications.length === 0 ? (
-//         <p className="text-gray-500">No notifications yet.</p>
-//       ) : (
-//         notifications.map((noti, idx) => (
-//           <Card key={idx} className="mb-4 shadow">
-//             <CardContent className="p-4">
-//               <p className="font-medium text-black">{noti.message}</p>
-//               <p className="text-sm text-gray-500 mt-1">
-//                 {new Date(noti.createdAt).toLocaleString()}
-//               </p>
-//             </CardContent>
-//           </Card>
-//         ))
-//       )}
-//     </div>
-//   );
-// }
 "use client";
 
 import { useEffect, useState } from "react";
@@ -203,7 +71,7 @@ export default function NotificationPage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
       <div className="max-w-4xl mx-auto px-4 pt-24 pb-8">
-        {/* Header Section */}
+      
         <div className="mb-8">
           <div className="flex items-center gap-3 mb-2">
             <div className="p-2 bg-blue-100 rounded-lg">
@@ -214,7 +82,7 @@ export default function NotificationPage() {
           <p className="text-slate-600">Stay updated with your latest activities and updates</p>
         </div>
 
-        {/* Notifications Content */}
+      
         {notifications.length === 0 ? (
           <div className="text-center py-16">
             <div className="mb-6">
@@ -268,7 +136,7 @@ export default function NotificationPage() {
           </div>
         )}
 
-        {/* Footer */}
+       
         {notifications.length > 0 && (
           <div className="mt-8 text-center">
             <p className="text-slate-500 text-sm">

@@ -11,7 +11,7 @@ const listing = [
 export default function LocationSearch() {
   return (
     <section className="px-4 py-10">
-      {/* Heading */}
+  
       <div className="text-center mb-8">
         <h2 className="text-2xl md:text-4xl font-bold text-[#2d1d0e]">
           Search By Location
@@ -21,7 +21,7 @@ export default function LocationSearch() {
         </p>
       </div>
 
-      {/* Cards */}
+    
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
         {listing.map((listing) => (
           <Link

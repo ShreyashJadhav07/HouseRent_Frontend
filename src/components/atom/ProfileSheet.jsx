@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { Menu, ChevronRightIcon, ExternalLinkIcon } from "lucide-react";
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "../ui/sheet";
-import { navigationItems } from "../section/Header"; // make sure this contains your links array
+import { navigationItems } from "../section/Header"; 
 import { useDispatch, useSelector } from "react-redux";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
@@ -43,7 +43,7 @@ const ProfileSheet = () => {
       <SheetContent side="right" className="px-6 bg-[#f4f4f4] text-gray-800">
         <SheetTitle className="sr-only">User Profile Sheet</SheetTitle>
 
-        {/* Profile Display */}
+    
         <div className="p-6 flex flex-col items-center gap-2 mt-[100px] bg-white rounded-3xl shadow-xl">
           {!userData.isLoggedIn ? <Image
           src="/user.png"

@@ -87,7 +87,7 @@ export default function TestimonialsCarousel() {
   return (
     <div className="w-full py-16 px-4 bg-white">
       <div className="max-w-7xl mx-auto">
-        {/* Header */}
+    
         <div className="text-center mb-12">
           <div className="flex justify-center mb-4">
             <MessageCircle className="w-12 h-12 text-slate-600" />
@@ -98,7 +98,7 @@ export default function TestimonialsCarousel() {
           </p>
         </div>
 
-        {/* Carousel */}
+       
         <Carousel
           opts={{
             align: "start",
@@ -114,7 +114,7 @@ export default function TestimonialsCarousel() {
               >
                 <Card className="h-full bg-white shadow-lg hover:shadow-xl transition-shadow duration-300 border-0">
                   <CardContent className="p-8 flex flex-col h-full">
-                    {/* Author Info - image at top */}
+                
                     <div className="flex flex-col items-center mb-6">
                       <Image
                         src={testimonial.image || "/placeholder.svg"}
@@ -130,7 +130,7 @@ export default function TestimonialsCarousel() {
                     </div>
 
 
-                    {/* Testimonial Text */}
+                  
                     <blockquote className="text-slate-700 text-lg leading-relaxed mb-4 flex-grow text-left">
                       {testimonial.quote}
                     </blockquote>
@@ -140,7 +140,7 @@ export default function TestimonialsCarousel() {
             ))}
           </CarouselContent>
 
-          {/* Navigation */}
+    
           <div className="flex justify-center mt-8 gap-4">
             <CarouselPrevious className="relative translate-y-0 left-0 cursor-pointer" />
             <CarouselNext className="relative translate-y-0 right-0 cursor-pointer" />

@@ -45,7 +45,7 @@ export default function LoginForm() {
                 confirmPassword,
             });
 
-            console.log("Signup Response:", res.data); // ✅ Debug the response
+            console.log("Signup Response:", res.data); 
 
             if (res.data?.user) {
                 dispatch(userLoggedInDetails(res.data.user));
@@ -70,7 +70,7 @@ export default function LoginForm() {
 
     return (
         <div className="min-h-screen bg-[#f4f4f4] flex flex-col items-center justify-center px-4">
-            {/* Intro Text Above Card */}
+          
             <div className="text-center mb-10 max-w-xl">
                 <h1 className="text-4xl font-bold text-gray-800">Create Your Account</h1>
                 <p className="mt-3 text-gray-600 text-base">
@@ -78,7 +78,7 @@ export default function LoginForm() {
                 </p>
             </div>
 
-            {/* Signup Card */}
+           
             <div className="w-full max-w-md bg-white rounded-3xl shadow-xl p-8">
                 <div className="text-center mb-6">
                     <h2 className="text-2xl font-semibold text-gray-800">Sign Up</h2>

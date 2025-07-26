@@ -54,7 +54,7 @@ export default function Works() {
   return (
     <section className="bg-white py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
-        {/* Header */}
+     
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             How It Works
@@ -65,14 +65,13 @@ export default function Works() {
           </p>
         </div>
 
-        {/* Steps Container */}
+     
         <div className="relative max-w-6xl mx-auto">
-          {/* Central Vertical Dotted Line */}
+      
           <div className="absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-0.5 bg-gray-200 hidden lg:block">
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-gray-300 to-transparent opacity-50"></div>
           </div>
 
-          {/* Mobile Vertical Line */}
           <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gray-200 lg:hidden"></div>
 
           <div className="space-y-24 lg:space-y-32">
@@ -87,19 +86,19 @@ export default function Works() {
                     : 'opacity-0 translate-y-12'
                 }`}
               >
-                {/* Desktop Layout - Alternating Sides */}
+                
                 <div className="hidden lg:block">
                   {index % 2 === 0 ? (
-                    // Left side layout (Steps 1, 3)
+                   
                     <div className="flex items-center">
-                      {/* Large Number - Top Left */}
+                  
                       <div className="absolute -top-8 left-0">
                         <span className="text-8xl font-bold text-gray-200 select-none">
                           {step.number}
                         </span>
                       </div>
                       
-                      {/* Content - Left Side */}
+                      
                       <div className="w-1/2 pr-16 pt-16">
                         <h3 className="text-2xl font-bold text-gray-900 mb-4">
                           {step.title}
@@ -127,11 +126,11 @@ export default function Works() {
                       <div className="w-1/2"></div>
                     </div>
                   ) : (
-                    // Right side layout (Steps 2, 4)
+                 
                     <div className="flex items-center">
                       <div className="w-1/2"></div>
                       
-                      {/* Center Dot */}
+                    
                       <div className="absolute left-1/2 transform -translate-x-1/2 top-20 z-10">
                         <div className={`w-4 h-4 rounded-full transition-all duration-500 ${
                           visibleSteps.has(index) 
@@ -146,7 +145,7 @@ export default function Works() {
                         </div>
                       </div>
                       
-                      {/* Content - Right Side */}
+                    
                       <div className="w-1/2 pl-16 pt-16">
                         <h3 className="text-2xl font-bold text-gray-900 mb-4">
                           {step.title}
@@ -156,7 +155,7 @@ export default function Works() {
                         </p>
                       </div>
                       
-                      {/* Large Number - Top Right */}
+                    
                       <div className="absolute -top-8 right-0">
                         <span className="text-8xl font-bold text-gray-200 select-none">
                           {step.number}
@@ -166,9 +165,9 @@ export default function Works() {
                   )}
                 </div>
 
-                {/* Mobile Layout */}
+            
                 <div className="lg:hidden flex items-start space-x-6">
-                  {/* Left side dot */}
+                
                   <div className="relative z-10 flex items-center justify-center mt-2">
                     <div className={`w-4 h-4 rounded-full transition-all duration-500 ${
                       visibleSteps.has(index) 
@@ -183,7 +182,7 @@ export default function Works() {
                     </div>
                   </div>
                   
-                  {/* Content */}
+                  
                   <div className="flex-1">
                     <div className="flex items-start space-x-4">
                       <div className="text-6xl font-bold text-gray-200 select-none">

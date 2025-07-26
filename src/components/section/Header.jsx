@@ -150,7 +150,7 @@ export default function Header() {
     <header className="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-white text-black shadow">
       <div className="container mx-auto px-4">
         <div className="flex items-center h-16">
-          {/* Left: Logo */}
+          
           <div className="flex-shrink-0">
             <Link href="/">
               <Image
@@ -163,7 +163,7 @@ export default function Header() {
             </Link>
           </div>
 
-          {/* Center: Nav Links */}
+    
           <div className="flex-1 flex justify-center">
             <nav className="hidden lg:flex items-center space-x-10 text-fuchsia-600">
               {navigationItems.map((item) => (
@@ -178,7 +178,7 @@ export default function Header() {
             </nav>
           </div>
 
-          {/* Right: Notification + Profile */}
+         
           <div className="flex items-center gap-4">
             {userData.isLoggedIn && (
               <Link href="/notification" className="relative">

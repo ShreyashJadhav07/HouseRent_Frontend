@@ -90,7 +90,7 @@ function ResetPassword() {
 
     return (
         <>
-            {/* Outer Layout */}
+         
             <div className="min-h-screen bg-[#f4f4f4] flex flex-col items-center justify-center px-4">
                 <div className="text-center mb-10 max-w-xl">
                     <h1 className="text-4xl font-bold text-gray-800">Reset Your Password</h1>
@@ -99,7 +99,7 @@ function ResetPassword() {
                     </p>
                 </div>
 
-                {/* Card */}
+               
                 <div className="w-full max-w-md bg-white rounded-3xl shadow-xl p-8">
                     <div className="text-center mb-6">
                         <h2 className="text-2xl font-semibold text-gray-800">Forgot Password</h2>
@@ -136,7 +136,7 @@ function ResetPassword() {
                 </div>
             </div>
 
-            {/* OTP + Reset Password Dialog */}
+   
             <Dialog open={showDialog} onOpenChange={() => setShowDialog(false)}>
                 <DialogOverlay>
                     <DialogContent className="bg-white rounded-3xl shadow-xl p-8 max-w-md mx-auto">

@@ -51,7 +51,7 @@ export default function LuxuryRetreatListing() {
   
     <div className="min-h-screen bg-white pt-15">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {/* Breadcrumb Navigation */}
+     
         <nav className="mb-8">
           <div className="flex items-center space-x-2 text-sm text-gray-500 uppercase tracking-wide">
             <span className="hover:text-gray-700 cursor-pointer">HOME</span>
@@ -62,7 +62,7 @@ export default function LuxuryRetreatListing() {
           </div>
         </nav>
 
-        {/* Header Section */}
+      
         <div className="flex justify-between items-start mb-8">
           <div>
             <h1 className="text-4xl md:text-5xl font-light text-gray-900 mb-4">Seaside Paradise</h1>
@@ -72,16 +72,16 @@ export default function LuxuryRetreatListing() {
             </div>
           </div>
 
-          {/* Featured Badge */}
+      
             <div className="bg-purple-600 text-white px-4 py-2 rounded-sm flex items-center" onClick={handleAddToWishlist}>
                     <Star className="w-4 h-4 mr-2 fill-current" />
                     <span className="text-sm font-medium tracking-wide cursor-pointer">Add To WishList</span>
                   </div>
               </div>
 
-        {/* Image Gallery Grid */}
+     
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 h-auto lg:h-[600px]">
-          {/* Main Large Image - Takes up 8 columns on large screens */}
+         
           <div className="lg:col-span-8 h-64 sm:h-80 lg:h-full">
             <div className="relative h-full rounded-lg overflow-hidden">
               <Image
@@ -94,9 +94,9 @@ export default function LuxuryRetreatListing() {
             </div>
           </div>
 
-          {/* Right Column Grid - Takes up 4 columns */}
+       
           <div className="lg:col-span-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-4">
-            {/* Top Right Image */}
+        
             <div className="relative h-64 lg:h-[145px]">
               <div className="relative h-full rounded-lg overflow-hidden">
                 <Image
@@ -108,7 +108,7 @@ export default function LuxuryRetreatListing() {
               </div>
             </div>
 
-            {/* Middle Right Image */}
+          
             <div className="relative h-64 lg:h-[145px]">
               <div className="relative h-full rounded-lg overflow-hidden">
                 <Image
@@ -120,7 +120,7 @@ export default function LuxuryRetreatListing() {
               </div>
             </div>
 
-            {/* Bottom Left Image */}
+          
             <div className="relative h-64 lg:h-[145px]">
               <div className="relative h-full rounded-lg overflow-hidden">
                 <Image
@@ -132,7 +132,7 @@ export default function LuxuryRetreatListing() {
               </div>
             </div>
 
-            {/* Bottom Right Image */}
+       
             <div className="relative h-64 lg:h-[145px]">
               <div className="relative h-full rounded-lg overflow-hidden">
                 <Image

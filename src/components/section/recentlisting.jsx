@@ -50,7 +50,7 @@ const listings = [
 export default function RecentListings() {
   return (
     <section className="w-full max-w-7xl mx-auto px-4 py-8 md:py-12 lg:py-16">
-      {/* Header */}
+      
       <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-8 md:mb-12">
         <div className="flex-1">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">Recent Listings</h2>
@@ -71,7 +71,7 @@ export default function RecentListings() {
         </Link>
       </div>
 
-      {/* Listings Grid */}
+     
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
         {listings.map((listing) => (
           <Link
@@ -83,7 +83,7 @@ export default function RecentListings() {
             className="group cursor-pointer border-0 shadow-none hover:shadow-lg transition-shadow duration-300"
           >
             <CardContent className="p-0">
-              {/* Property Image */}
+              
               <div className="relative aspect-[4/3] mb-4 overflow-hidden rounded-lg">
                 <Image
                   src={listing.image}
@@ -94,9 +94,9 @@ export default function RecentListings() {
                 />
               </div>
 
-              {/* Property Details */}
+             
               <div className="space-y-3">
-                {/* Guests and Bedrooms */}
+                
                 <div className="flex items-center gap-4 text-sm text-gray-600">
                   <div className="flex items-center gap-1">
                     <Users className="w-4 h-4 text-blue-500" />
@@ -110,15 +110,15 @@ export default function RecentListings() {
                   </div>
                 </div>
 
-                {/* Title */}
+             
                 <h3 className="text-xl font-semibold text-gray-900 group-hover:text-blue-700 transition-colors duration-300">
                   {listing.title}
                 </h3>
 
-                {/* Location */}
+              
                 <p className="text-gray-600 text-sm">{listing.location}</p>
 
-                {/* Price */}
+                
                 <p className="text-gray-900 font-medium">
                   <span className="text-lg 900 group-hover:text-blue-700 transition-colors duration-300">${listing.price} / night</span>
                   <span className="text-gray-600"> </span>

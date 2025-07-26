@@ -5,7 +5,7 @@ export default function ServiceComponent() {
   return (
     <section className="py-16 px-4 bg-white">
       <div className="max-w-6xl mx-auto">
-        {/* Header */}
+        
         <div className="text-center mb-12">
           <div className="flex justify-center mb-4">
             <div className="p-3 bg-white rounded-full shadow-sm">
@@ -19,9 +19,9 @@ export default function ServiceComponent() {
           </p>
         </div>
 
-        {/* Service Cards */}
+        
         <div className="grid md:grid-cols-3 gap-8">
-          {/* Fully Furnished */}
+         
           <div className="text-center">
             <div className="mb-6">
               <Image
@@ -38,7 +38,7 @@ export default function ServiceComponent() {
             </p>
           </div>
 
-          {/* Accessible Locations */}
+         
           <div className="text-center">
             <div className="mb-6">
               <Image
@@ -56,7 +56,7 @@ export default function ServiceComponent() {
             </p>
           </div>
 
-          {/* Competitive Prices */}
+       
           <div className="text-center">
             <div className="mb-6">
               <Image

@@ -6,12 +6,12 @@ export default function HelpingComponent() {
   return (
     <section className="bg-white py-16 px-4">
       <div className="max-w-4xl mx-auto">
-        {/* Main Heading */}
+     
         <h2 className="text-4xl md:text-5xl font-bold text-center text-gray-900 mb-16">We're Here To Help</h2>
 
-        {/* Services Grid */}
+       
         <div className="space-y-12">
-          {/* Discover Section */}
+        
           <div className="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-8">
             <div className="flex flex-col items-center md:items-start text-center md:text-left min-w-[120px]">
               <div className="w-16 h-16 rounded-full border-2 border-gray-900 flex items-center justify-center mb-4">
@@ -37,7 +37,7 @@ export default function HelpingComponent() {
             </div>
           </div>
 
-          {/* Inquire Section */}
+        
           <div className="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-8">
             <div className="flex flex-col items-center md:items-start text-center md:text-left min-w-[120px]">
               <div className="w-16 h-16 rounded-full border-2 border-gray-900 flex items-center justify-center mb-4">
@@ -62,7 +62,7 @@ export default function HelpingComponent() {
             </div>
           </div>
 
-          {/* List Section */}
+         
           <div className="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-8">
             <div className="flex flex-col items-center md:items-start text-center md:text-left min-w-[120px]">
               <div className="w-16 h-16 rounded-full border-2 border-gray-900 flex items-center justify-center mb-4">

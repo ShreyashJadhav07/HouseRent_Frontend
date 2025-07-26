@@ -38,18 +38,18 @@ export default function Footer() {
 
   return (
     <footer className="bg-gray-900 text-white">
-      {/* Main Footer Content */}
+    
       <div className="max-w-7xl mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
-          {/* Logo and Social Media */}
+        
           <div className="lg:col-span-2">
-            {/* Logo */}
+          
             <div className="flex items-center gap-2 mb-6">
               <Home className="w-6 h-6 text-white" />
               <span className="text-xl font-semibold">HomeEasy</span>
             </div>
 
-            {/* Social Media Icons */}
+          
             <div className="flex gap-4">
               {socialLinks.map((social) => {
                 const IconComponent = social.icon
@@ -67,7 +67,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Main Links */}
+      
           <div>
             <h3 className="text-lg font-semibold mb-6">Main</h3>
             <ul className="space-y-4">
@@ -81,7 +81,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Info Links */}
           <div>
             <h3 className="text-lg font-semibold mb-6">Info</h3>
             <ul className="space-y-4">
@@ -95,7 +94,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Others Links */}
+        
           <div>
             <h3 className="text-lg font-semibold mb-6">Others</h3>
             <ul className="space-y-4">
@@ -109,7 +108,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Utilities Links */}
+         
           <div>
             <h3 className="text-lg font-semibold mb-6">Utilities</h3>
             <ul className="space-y-4">
@@ -125,11 +124,11 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Bottom Bar */}
+ 
       <div className="border-t border-gray-800">
         <div className="max-w-7xl mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-400">
-            {/* Copyright */}
+            
             <div>© HomeEasy. All Rights Reserved.</div>
 
 
