@@ -20,7 +20,7 @@ export default function WashingtonPage() {
 
               <Button className="cursor-pointer bg-gradient-to-r from-purple-600 to-pink-500 text-white px-6 py-3 rounded font-semibold  ">
                 See By Locations
-              </Butto>
+              </Button>
               </Link>
               
              
