@@ -7,8 +7,9 @@ import { Button } from "@/components/ui/button"
 import { useState } from "react"
 import { api, ENDPOINT } from "@/lib/api"
 import { toast } from "sonner"
-import { useDispatch } from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
 import { userLoggedInDetails } from "@/redux/userSlice"
+import { useRouter } from "next/navigation"
 
 export default function RentalPropertyPage({
   brokerId,
@@ -27,11 +28,19 @@ export default function RentalPropertyPage({
   const [fullName, setFullName] = useState("")
   const [email, setEmail] = useState("")
   const [phone, setPhone] = useState("")
+  const userData=useSelector((state) => state.user)
   const dispatch=useDispatch()
+  const router=useRouter();
 
   const handleBookAppointment = async () => {
+
     if (!fullName || !email || !phone) {
       toast.error("Please fill all fields.")
+      return
+    }
+    if(!userData.isLoggedIn){
+      toast("Please Login to Book Appointment");
+      router.push("/login")
       return
     }
 
@@ -52,12 +61,12 @@ export default function RentalPropertyPage({
         guest,
         bedrooms
       }
-      console.log("Booking payload:", payload);
-      console.log("API endpoint:", ENDPOINT.bookAppointment);
+   
 
       const res = await api.post(ENDPOINT.bookAppointment, payload)
 
       if (res.data.status === "success") {
+      
         dispatch(userLoggedInDetails(res.data.user))
         toast.success("Broker Will Sent Confirmation  to your  email.")
         setFullName("")

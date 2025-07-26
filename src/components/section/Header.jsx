@@ -122,6 +122,7 @@ export const navigationItems = [
   { name: "ABOUT US", href: "/about" },
   { name: "SUBSCRIPTION", href: "/subscription" },
   { name: "CONTACT US", href: "/contactUS" },
+
 ];
 
 export default function Header() {

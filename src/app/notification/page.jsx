@@ -35,7 +35,7 @@ export default function NotificationPage() {
 
   if (!userData.isLoggedIn) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+      <div className="min-h-screen bg-white">
         <section className="w-full max-w-7xl mx-auto px-4 pt-24 pb-8 md:pt-28 md:pb-12 lg:pt-32 lg:pb-16">
           <div className="flex flex-col items-center justify-center h-[60vh] text-center">
             <FolderLock className="w-20 h-20 mx-auto mb-6 text-slate-400" strokeWidth={1.2} />
@@ -57,7 +57,7 @@ export default function NotificationPage() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+      <div className="min-h-screen bg-white">
         <div className="max-w-3xl mx-auto px-4 pt-24 pb-8">
           <div className="flex flex-col items-center justify-center h-[50vh]">
             <Loader2 className="w-8 h-8 animate-spin text-blue-600 mb-4" />
@@ -69,7 +69,7 @@ export default function NotificationPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+    <div className="min-h-screen bg-white">
       <div className="max-w-4xl mx-auto px-4 pt-24 pb-8">
       
         <div className="mb-8">

@@ -45,7 +45,7 @@ export default function LoginForm() {
                 confirmPassword,
             });
 
-            console.log("Signup Response:", res.data); 
+           
 
             if (res.data?.user) {
                 dispatch(userLoggedInDetails(res.data.user));

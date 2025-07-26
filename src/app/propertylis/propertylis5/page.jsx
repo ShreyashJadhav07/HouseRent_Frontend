@@ -18,13 +18,13 @@ const handleAddToWishlist = async () => {
   
   try {
   
-    console.log('Checking if user is authenticated...');
+  
     const userCheck = await api.get(ENDPOINT.user);
-    console.log('User authenticated:', userCheck.data);
+   
     
-    console.log('Adding to wishlist...');
+   
     const res = await api.post(ENDPOINT.addToWishlist, listing);
-    console.log('Wishlist response:', res.data);
+   
     
     if (res.data.status === "success") {
       toast("Added to wishlist successfully!");

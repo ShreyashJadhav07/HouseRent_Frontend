@@ -22,7 +22,7 @@ export default function WishlistPage() {
       setError(null)
       
       const res = await api.get(ENDPOINT.getWishlist)
-      console.log('Wishlist response:', res.data)
+     
       setWishlist(res.data.data || [])
     } catch (error) {
       console.error('Wishlist fetch error:', error)
@@ -44,7 +44,7 @@ export default function WishlistPage() {
 
   if (!userData.isLoggedIn) {
     return (
-      <div className="min-h-screen bg-white">
+      <div className="min-h-screen bg-white pt-5">
         <section className="w-full max-w-7xl mx-auto px-4 py-8 md:py-12 lg:py-16">
           <div className="flex flex-col items-center justify-center h-[60vh] text-center">
             <FolderLock className="w-20 h-20 mx-auto mb-6 text-slate-400" strokeWidth={1.2} />
