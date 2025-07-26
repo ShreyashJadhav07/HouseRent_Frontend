@@ -76,7 +76,7 @@ const ProfileSheet = () => {
                {userData.isLoggedIn ? "Logout" : "Login"}
              </Link>
            </div>
-           <div className="divide-y my-4 bg-white rounded-3xl shadow-xl p-4">
+           <div className="divide-y  bg-white rounded-3xl shadow-xl p-2">
             <div>
               {navigationItems.map((link,index) =>(
                 <Link

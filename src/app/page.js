@@ -12,7 +12,7 @@ export default function Home() {
   const stats=[
     {value:22,label:"Houses"},
     {value:10,label:"Apartments"},
-    {value:843,label:"satisfied Client"},
+    {value:145,label:"satisfied Client"},
     {value:29,label:"Happy Owners"},
     
     

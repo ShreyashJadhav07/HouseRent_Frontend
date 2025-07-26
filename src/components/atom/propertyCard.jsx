@@ -250,7 +250,7 @@ export default function RentalPropertyPage({
 
       if (res.data.status === "success") {
         dispatch(userLoggedInDetails(res.data.user))
-        toast.success("Appointment booked! Confirmation sent to email.")
+        toast.success("Broker Will Sent Confirmation  to your  email.")
         setFullName("")
         setEmail("")
         setPhone("")

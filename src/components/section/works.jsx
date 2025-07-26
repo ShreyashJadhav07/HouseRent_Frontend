@@ -109,7 +109,7 @@ export default function Works() {
                         </p>
                       </div>
                       
-                      {/* Center Dot */}
+                      
                       <div className="absolute left-1/2 transform -translate-x-1/2 top-20 z-10">
                         <div className={`w-4 h-4 rounded-full transition-all duration-500 ${
                           visibleSteps.has(index) 

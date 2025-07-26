@@ -56,19 +56,20 @@ export default function LuxuryRetreatListing() {
           <div className="flex items-center space-x-2 text-sm text-gray-500 uppercase tracking-wide">
             <span className="hover:text-gray-700 cursor-pointer">HOME</span>
             <span>/</span>
-            <span className="hover:text-gray-700 cursor-pointer">LISTINGS</span>
+            <span className="hover:text-gray-700 cursor-pointer">Premium</span>
             <span>/</span>
-            <span className="text-gray-700">SAN FRANCISCO</span>
+            <span className="text-gray-700">California</span>
+    
           </div>
         </nav>
 
         {/* Header Section */}
         <div className="flex justify-between items-start mb-8">
           <div>
-            <h1 className="text-4xl md:text-5xl font-light text-gray-900 mb-4">Luxury Retreat</h1>
+            <h1 className="text-4xl md:text-5xl font-light text-gray-900 mb-4">LakeView Mansion</h1>
             <div className="flex items-center text-gray-600">
               <MapPin className="w-5 h-5 mr-2" />
-              <span className="text-lg">Pacific, San Francisco</span>
+              <span className="text-lg">Lake Tahoe, California</span>
             </div>
           </div>
 
@@ -163,6 +164,7 @@ export default function LuxuryRetreatListing() {
     
     />
     </>
+
   
   )
 }

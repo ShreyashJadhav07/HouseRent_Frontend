@@ -140,7 +140,7 @@ export default function WishlistPage() {
   // Show login required if not authenticated
   if (!userData.isLoggedIn) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+      <div className="min-h-screen bg-white">
         <section className="w-full max-w-7xl mx-auto px-4 py-8 md:py-12 lg:py-16">
           <div className="flex flex-col items-center justify-center h-[60vh] text-center">
             <FolderLock className="w-20 h-20 mx-auto mb-6 text-slate-400" strokeWidth={1.2} />
@@ -148,12 +148,13 @@ export default function WishlistPage() {
             <p className="text-slate-600 mb-8 max-w-md mx-auto text-lg">
               You need to be logged in to view your wishlist. Please sign in to access your saved properties.
             </p>
-            <Link 
-              href="/login"
-              className={cn(buttonVariants(), "bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-xl font-semibold transition-colors")}
-            >
-              Login
-            </Link>
+         <Link 
+             href="/login"
+             className="bg-gradient-to-r from-purple-600 to-pink-500 text-white px-8 py-3 rounded-xl font-semibold inline-block transition-colors"
+           >
+  Login
+</Link>
+
           </div>
         </section>
       </div>
@@ -220,11 +221,7 @@ export default function WishlistPage() {
                 <CardContent className="p-0">
                   {/* Featured Badge */}
                   <div className="relative">
-                    <div className="absolute top-4 left-4 z-10">
-                      <span className="px-3 py-1 bg-gradient-to-r from-purple-500 to-pink-500 text-white text-xs font-semibold rounded-full shadow-lg">
-                        ★ FEATURED
-                      </span>
-                    </div>
+                  
                     
                     {/* Property Image */}
                     <div className="relative aspect-[4/3] overflow-hidden">
@@ -268,7 +265,7 @@ export default function WishlistPage() {
                     {/* Price */}
                     <div className="flex items-baseline gap-1 pt-2">
                       <span className="text-2xl font-bold text-slate-900 group-hover:text-blue-700 transition-colors duration-300">
-                        ${item.price}
+                        ${item.price} 
                       </span>
                     </div>
                   </div>

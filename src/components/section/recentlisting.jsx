@@ -99,11 +99,11 @@ export default function RecentListings() {
                 {/* Guests and Bedrooms */}
                 <div className="flex items-center gap-4 text-sm text-gray-600">
                   <div className="flex items-center gap-1">
-                    <Users className="w-4 h-4" />
+                    <Users className="w-4 h-4 text-blue-500" />
                 
                   </div>
                   <div className="flex items-center gap-1">
-                    <Bed className="w-4 h-4" />
+                    <Bed className="w-4 h-4 text-blue-500" />
                     <span>
                       {listing.bedrooms} Bedroom{listing.bedrooms > 1 ? "s" : ""}
                     </span>
@@ -111,7 +111,7 @@ export default function RecentListings() {
                 </div>
 
                 {/* Title */}
-                <h3 className="text-xl font-semibold text-gray-900 group-hover:text-gray-700 transition-colors">
+                <h3 className="text-xl font-semibold text-gray-900 group-hover:text-blue-700 transition-colors duration-300">
                   {listing.title}
                 </h3>
 
@@ -120,7 +120,7 @@ export default function RecentListings() {
 
                 {/* Price */}
                 <p className="text-gray-900 font-medium">
-                  <span className="text-lg">${listing.price} / night</span>
+                  <span className="text-lg 900 group-hover:text-blue-700 transition-colors duration-300">${listing.price} / night</span>
                   <span className="text-gray-600"> </span>
                 </p>
               </div>

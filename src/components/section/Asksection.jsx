@@ -7,25 +7,25 @@ export default function AskSection() {
       id: "item-1",
       question: "What Types Of Houses Are Available For Rent?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.",
+           "We offer a wide range of rental properties including apartments, single-family homes, townhouses, and luxury villas. You can filter listings based on location, price, number of bedrooms, and amenities to find the perfect match for your lifestyle and budget.",
     },
     {
       id: "item-2",
       question: "What Is The Rental Application Process?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.",
+           "To apply for a rental property, you'll need to complete an online application form, provide valid ID, proof of income, and undergo a background and credit check. Once your application is approved, you’ll be contacted to proceed with the lease signing and deposit payment.",
     },
     {
       id: "item-3",
       question: "What Are Your Rental Rates?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.",
+          "Rental rates vary depending on the property type, location, size, and included amenities. You can view the monthly rent and any additional fees (e.g., utilities, parking, or pet fees) directly on each listing. We also offer flexible options for short-term and long-term leases.",
     },
     {
       id: "item-4",
       question: "What Are The Lease Terms?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.",
+             "Most properties offer 6-month or 12-month lease agreements. Some listings may allow month-to-month or short-term rentals. Lease terms, including renewal options and termination policies, are clearly outlined in the listing and can be discussed with the landlord or property manager before signing.",
     },
   ]
 

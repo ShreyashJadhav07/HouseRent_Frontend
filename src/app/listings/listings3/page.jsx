@@ -128,7 +128,7 @@ export default function ListingsPage() {
       </section>
 <div className="flex justify-center gap-4 mt-5 mb-7">
   <Link
-    href="/listings"
+    href="/listings/listings2"
  className=" bg-gradient-to-r from-purple-600 to-pink-500 text-white px-6 py-3 rounded font-semibold inline-block"
   >
     Previous

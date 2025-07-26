@@ -142,8 +142,8 @@ export default function TestimonialsCarousel() {
 
           {/* Navigation */}
           <div className="flex justify-center mt-8 gap-4">
-            <CarouselPrevious className="relative translate-y-0 left-0" />
-            <CarouselNext className="relative translate-y-0 right-0" />
+            <CarouselPrevious className="relative translate-y-0 left-0 cursor-pointer" />
+            <CarouselNext className="relative translate-y-0 right-0 cursor-pointer" />
           </div>
         </Carousel>
       </div>
