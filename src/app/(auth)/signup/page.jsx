@@ -69,9 +69,9 @@ export default function LoginForm() {
     };
 
     return (
-        <div className="min-h-screen bg-[#f4f4f4] flex flex-col items-center justify-center px-4">
+        <div className="min-h-screen bg-[#f4f4f4] flex flex-col items-center justify-center px-4 pt-10">
           
-            <div className="text-center mb-10 max-w-xl">
+            <div className="text-center mb-10 max-w-xl pt-5">
                 <h1 className="text-4xl font-bold text-gray-800">Create Your Account</h1>
                 <p className="mt-3 text-gray-600 text-base">
                     Join House Renting Website to list or explore rental properties with ease.
