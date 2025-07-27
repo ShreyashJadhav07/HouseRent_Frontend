@@ -121,7 +121,7 @@ function ResetPassword() {
                         </div>
                         <Button
                             onClick={handleForgetPassword}
-                            className="w-full bg-gradient-to-r from-purple-600 to-pink-500 text-white font-semibold py-2 rounded-full hover:opacity-90 transition"
+                            className="w-full bg-gradient-to-r from-purple-600 to-pink-500 text-white font-semibold py-2 rounded-full hover:opacity-90 transition cursor-pointer"
                         >
                             {loading ? (
                                 <>
@@ -177,7 +177,7 @@ function ResetPassword() {
                             </div>
                             <Button
                                 onClick={handleResetPassword}
-                                className="w-full mt-2 bg-gradient-to-r from-purple-600 to-pink-500 text-white font-semibold py-2 rounded-full hover:opacity-90 transition"
+                                className="w-full mt-2 bg-gradient-to-r from-purple-600 to-pink-500 text-white font-semibold py-2 rounded-full hover:opacity-90 transition cursor-pointer"
                             >
                                 {loading ? (
                                     <>

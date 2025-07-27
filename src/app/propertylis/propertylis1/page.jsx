@@ -73,7 +73,7 @@ export default function LuxuryRetreatListing() {
           </div>
 
       
-          <div className="bg-purple-600 text-white px-4 py-2 rounded-sm flex items-center" onClick={handleAddToWishlist}>
+          <div className="bg-purple-600 text-white px-4 py-2 rounded-sm flex items-center cursor-pointer" onClick={handleAddToWishlist}>
             <Star className="w-4 h-4 mr-2 fill-current" />
             <span className="text-sm font-medium tracking-wide cursor-pointer">Add To WishList</span>
           </div>
